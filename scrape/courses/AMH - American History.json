@@ -1,0 +1,1336 @@
+{
+  "AMH3402 - History of the South to 1865": {
+    "name": "AMH3402 - History of the South to 1865",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 or AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Development of the southern colonies, beginning sectionalism, the cotton economy, and slavery, Calhoun's constitutional theories, secession, Civil War and its aftermath."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3571 - Black American History I": {
+    "name": "AMH3571 - Black American History I",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010, AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "History of Black Americans from Africa, to slavery, to freedom and its limits in pre-World War I America."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3403 - History of the South Since 1865": {
+    "name": "AMH3403 - History of the South Since 1865",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Reconstruction, the \"solid South\" and the racial dilemma, progressivism for whites only, southern literature, 20th-century economic, political and social changes, and the new Reconstruction."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3562 - Women in American History II": {
+    "name": "AMH3562 - Women in American History II",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010, AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Examines industrialization, entry of women into higher education and professions, winning of suffrage, changing profile of female wage earner, and rise of modern feminist movement."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3370 - Capitalism & Democracy in US History": {
+    "name": "AMH3370 - Capitalism & Democracy in US History",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2020"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "An introduction to the economic development of the U.S., with emphasis on agriculture, labor, industrialization, transportation, and banking."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3560 - Women, Law, and Society in American History": {
+    "name": "AMH3560 - Women, Law, and Society in American History",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010, AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Examines the intersection of women and law in American History from the Colonial era to the present."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3541 - U. S. Military History To 1900": {
+    "name": "AMH3541 - U. S. Military History To 1900",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "U.S. military history from the colonial period to 1900 focusing on the creation of American military institutions, conduct of war, and influence on society."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3558 - History of American Law": {
+    "name": "AMH3558 - History of American Law",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or EUH 2000 and EUH 2001."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The social, political, and economic significance of the law as a historic process in America."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3561 - Women in American History I": {
+    "name": "AMH3561 - Women in American History I",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010, AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Examines women in indigenous, colonial, African-American slave and free societies, Republican Motherhood, impact of industrialization on women's roles, and emergence of women's rights movement."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH2010H - Honors U.S. History: 1492-1877": {
+    "name": "AMH2010H - Honors U.S. History: 1492-1877",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Consent of Honors."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Survey of U.S. History from 1492-1877."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3483 - History of Florida Indians": {
+    "name": "AMH3483 - History of Florida Indians",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 or AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Enhances understanding of Indian peoples living in the vicinity of present-day Florida from the pre-colonial period to the present."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3425 - Sunbelt Florida": {
+    "name": "AMH3425 - Sunbelt Florida",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "History of Florida from post-war industrialization to the present."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3547 - U.S. Military History Since 1900": {
+    "name": "AMH3547 - U.S. Military History Since 1900",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "U. S. military history since 1900 emphasizing civil-military relations, warfare, and military developments."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH2020H - Honors U.S. History: 1877-Present": {
+    "name": "AMH2020H - Honors U.S. History: 1877-Present",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Permission of Honors and AMH 2010 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Survey of U.S. History from 1877 to the present. May be taken before AMH 2010. Honors-level content."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3422 - Frontier Florida": {
+    "name": "AMH3422 - Frontier Florida",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "History of Florida from U.S. territory until post-war industrialization."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH2020 - U.S. History: 1877-Present": {
+    "name": "AMH2020 - U.S. History: 1877-Present",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Survey of U.S. History from 1877 to the present. May be taken before AMH 2010."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH2010 - U.S. History: 1492-1877": {
+    "name": "AMH2010 - U.S. History: 1492-1877",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Survey of U.S. History from 1492-1877."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3442 - History of the Frontier: Western America": {
+    "name": "AMH3442 - History of the Frontier: Western America",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The development of the trans-Mississippi West and its impact upon American history."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH1070 - Florida: People, Places, and History": {
+    "name": "AMH1070 - Florida: People, Places, and History",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "An introduction to Florida, focusing on the state's History and its place in the world."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3441 - History of the Frontier: Eastern America": {
+    "name": "AMH3441 - History of the Frontier: Eastern America",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The progression of the westward movement from the colonial settlements to the Mississippi, considered as an interpretive approach to American history."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4160 - Jacksonian America": {
+    "name": "AMH4160 - Jacksonian America",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The risk of American nationalism, Jacksonian Democracy, the Mexican War, and sectional conflict."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3800 - Canadian History": {
+    "name": "AMH3800 - Canadian History",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Canada since Colonial times and the present, but with emphasis on the period since the British North America Act, 1867."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3586 - History of Latinos in the U.S.": {
+    "name": "AMH3586 - History of Latinos in the U.S.",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2020"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Course begins with 16th century through the modern period. Special emphasis on Chicanos, Puerto Ricans, and Cubans."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3611 - Sport in America Since 1945": {
+    "name": "AMH3611 - Sport in America Since 1945",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010, AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "American sport emphasizing the development of professional and collegiate sport since 1945."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3572 - Black American History II": {
+    "name": "AMH3572 - Black American History II",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010, AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "A history of Black America in the Twentieth Century and the continuing struggle for equality in America."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4344 - American Car Culture": {
+    "name": "AMH4344 - American Car Culture",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "An interdisciplinary examination of American history and the emergence of car culture from the late nineteenth-century."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4311 - American Culture I": {
+    "name": "AMH4311 - American Culture I",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The European Backgrounds: Puritanism; Enlightenment; the Great Awakening; Revolutionary Thought: Romanticism; the Southern Mind and the Yankee Response; Popular Culture and the rise of recreation."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4270 - United States History: 1939-1960": {
+    "name": "AMH4270 - United States History: 1939-1960",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "World War II, the Cold War and America in the fifties."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4110 - Colonial America, 1607-1763": {
+    "name": "AMH4110 - Colonial America, 1607-1763",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The voyages of discovery, the origins of the thirteen colonies, and their political, economic, social, and religious life in the 17th and 18th centuries."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4140 - Jeffersonian America": {
+    "name": "AMH4140 - Jeffersonian America",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The Confederation era, the Federalists, Jeffersonian Democracy, and the War of 1812."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4273 - U. S. History Since 1960": {
+    "name": "AMH4273 - U. S. History Since 1960",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Civil rights and Women's Liberation Movements, Vietnam War, Watergate, the decline of liberalism and the rise of conservatism, end of the Cold War."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4201 - The Gilded Age and Progressivism": {
+    "name": "AMH4201 - The Gilded Age and Progressivism",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The Rise of Industrialized and Urbanized America, The emergence of the New South and the New West, the Populist Movement, overseas expansion, Progressivism."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4130 - The Age of the American Revolution, 1763-1789": {
+    "name": "AMH4130 - The Age of the American Revolution, 1763-1789",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The American Revolution - its origins, course, and impact upon American society - the Articles of Confederation, the Philadelphia Convention and its work."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH3580 - North American Indians": {
+    "name": "AMH3580 - North American Indians",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "History of North American Indians and their relations with the United States from the 18th century to the present."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4231 - United States History: 1914-1939": {
+    "name": "AMH4231 - United States History: 1914-1939",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The progressive reforms of Woodrow Wilson, World War I, post-war prosperity, the Depression, the New Deal, and the coming of World War II."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4170 - Civil War and Reconstruction": {
+    "name": "AMH4170 - Civil War and Reconstruction",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Reconstruction, and impact of industrialism."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4112 - The Atlantic World": {
+    "name": "AMH4112 - The Atlantic World",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The impact and transforming effect of the Atlantic System on the peoples of Western Europe, Western Africa, the Caribbean and the Americas."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4375 - Technology and US Culture": {
+    "name": "AMH4375 - Technology and US Culture",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 or AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Examines the history of technology in the United States, its impact on society, and society's impact on technological development."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4345 - History of American Tourism": {
+    "name": "AMH4345 - History of American Tourism",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Grade of 'C' (2.0) or better in ENC 1102 or AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Historical relationship between tourism and the United States as both tourist site and exporter of tourists, through primary sources."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4376 - U.S. Space History": {
+    "name": "AMH4376 - U.S. Space History",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Post World War II US rocketry and space travel with focus on the role of Cape Canaveral/Kennedy Space Center."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4513 - US Foreign Relations: Close of World War II to the Present": {
+    "name": "AMH4513 - US Foreign Relations: Close of World War II to the Present",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "U.S. foreign relations from the end of World War II to the present day."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4512 - US Foreign Relations from the Founding Era to World War II": {
+    "name": "AMH4512 - US Foreign Relations from the Founding Era to World War II",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "U.S. foreign relations from the Founding era to the end of World War II, with focus on the two world wars."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4680 - Women in American Science": {
+    "name": "AMH4680 - Women in American Science",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 or AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Examines how American society uses Western ideas about sex and gender to define women's roles in science and their influence on their fields."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4644 - Viewing American History in the Twentieth Century": {
+    "name": "AMH4644 - Viewing American History in the Twentieth Century",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Examination of television, film, comics, and other popular media as primary sources in the study of U.S. History in the 20th Century."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4594H - Honors Laser Scanning America's Past": {
+    "name": "AMH4594H - Honors Laser Scanning America's Past",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1.5"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102 or Consent of Honors."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Recording a structure's \"life history,\" combining laser scans and digital data with photographs, documents, and oral histories of individuals associated with the building. With honors content."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4650 - History of U.S. Aviation": {
+    "name": "AMH4650 - History of U.S. Aviation",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 or AMH 2020."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Aviation development in the United States and its role in American culture."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4594 - Laser Scanning America's Past": {
+    "name": "AMH4594 - Laser Scanning America's Past",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Grade of 'C' (2.0) or better in ENC 1102 or AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The recording of a structure's \"life history,\" combining laser scans and digital data with photographs, documents, and oral histories of individuals associated with the building."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4575 - History of the Civil Rights Movement": {
+    "name": "AMH4575 - History of the Civil Rights Movement",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "PR: Grade of C (2.0) or better required in ENC 1102 or AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "History of the African-American Civil Rights Movement from 19th century origins to 1960s victories to today, through analysis of social and cultural primary sources."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4510 - Rise of the United States to World Power, 1776-1914": {
+    "name": "AMH4510 - Rise of the United States to World Power, 1776-1914",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The evolution of basic American policies. American expansion. America's major wars, and the emergence of America as a world power."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AMH4573 - Black Militancy in the 20th Century": {
+    "name": "AMH4573 - Black Militancy in the 20th Century",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "AMH 2010 and AMH 2020 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The rise and development of black militant organizations and how these groups have been influenced by hostile foreign entities."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  }
+}

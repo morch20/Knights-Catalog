@@ -1,0 +1,353 @@
+{
+  "ACG2021 - Principles of Financial Accounting": {
+    "name": "ACG2021 - Principles of Financial Accounting",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Earn a minimum grade of C in each of the following: \nCourse Not Found"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Nature of accounting, financial statements, the accounting cycle, assets, current liabilities, long-term debt, and owner's equity; accounting for proprietorships and corporations."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG2021H - Honors Principles of Financial Accounting": {
+    "name": "ACG2021H - Honors Principles of Financial Accounting",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete all of the following\nEarn a minimum grade of C in each of the following: \nCourse Not Found\nAnd Consent of Honors"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Nature of accounting, financial statements, the accounting cycle, assets, current liabilities, long-term debt, and owner's equity; accounting for proprietorships and corporations. Honors level."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG3131 - Intermediate Financial Accounting I": {
+    "name": "ACG3131 - Intermediate Financial Accounting I",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Pre-Accounting or Pre-Finance major or Accounting minor & ACG 2021 & ACG 2071 each with a grade of \"C\" (2.0) or better. "
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Technical knowledge about accounting measurement and disclosure, as well as how financial statements are analyzed and interpreted by external users."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG3361 - Cost Accounting I": {
+    "name": "ACG3361 - Cost Accounting I",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3131 with a grade of \"B\" (3.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Theory and practice of using accounting information for managerial planning, and control as well as in costing, and pricing decisions."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG3173 - Accounting for Decision-Makers": {
+    "name": "ACG3173 - Accounting for Decision-Makers",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Pre-Business (except Pre-Accounting) major & ACG 2021 & ACG 2071 each with a grade of \"C\" (2.0) or better. "
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Explores the use of financial statements and managerial accounting in support of business decisions. The tax environment on businesses is also explored."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG2071 - Principles of Managerial Accounting": {
+    "name": "ACG2071 - Principles of Managerial Accounting",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ACG 2021 with a \"C\" (2.0) or better. "
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The purpose of this class is to thoroughly familiarize the student with the various uses of accounting information for planning and control."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG4651 - Auditing": {
+    "name": "ACG4651 - Auditing",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3141 and ACG 4401C with a grade of \"C\" (2.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The standards, practices, and procedures followed in the audit function."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG4803 - Advanced Issues in Financial Accounting": {
+    "name": "ACG4803 - Advanced Issues in Financial Accounting",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3141 with a grade of \"C\" (2.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Advanced issues in financial accounting, including consolidations and IFRS."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG3501 - Financial Accounting for Governmental and Nonprofit Organizations": {
+    "name": "ACG3501 - Financial Accounting for Governmental and Nonprofit Organizations",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3131 with a grade of \"B\" (3.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Application of financial accounting for governmental and nonprofit organizations."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG4401C - Accounting Information Systems": {
+    "name": "ACG4401C - Accounting Information Systems",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3131 with a grade of \"B\" (3.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Manual and computer-based accounting information systems."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG4671 - Internal Auditing": {
+    "name": "ACG4671 - Internal Auditing",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3141 and ACG 4401C with a grade of \"C\" (2.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Theory and practice of internal auditing and the use of internal auditing in organizational control."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG4840 - Accounting Analytics": {
+    "name": "ACG4840 - Accounting Analytics",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, QMB 3602 with a grade of \"C\" (2.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Develop the skill set needed to extract value from big data through advanced analytics and emerging technologies in an accounting, auditing, and tax environment."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  },
+  "ACG3141 - Intermediate Financial Accounting II": {
+    "name": "ACG3141 - Intermediate Financial Accounting II",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Junior standing, Accounting major or minor, ACG 3131 with a grade of \"B\" (3.0) or better."
+    },
+    "Prerequisites/Corequisites": {
+      "title": "Prerequisites/Corequisites",
+      "text": "QMB 3602  Business Research for Decision Making"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Accounting theory and practice related to preparation, and interpretation of external financial statements."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Business Administration"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Kenneth G Dixon School of Accounting"
+    }
+  }
+}

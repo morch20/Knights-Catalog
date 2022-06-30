@@ -1,0 +1,272 @@
+{
+  "AFA3371H - Honors Evolution of Hip Hop": {
+    "name": "AFA3371H - Honors Evolution of Hip Hop",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Consent of Honors."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Historical analysis of Hip Hop from its African roots to the present with emphasis on the socio-political implications of this phenomenon. With Honors content."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3300 - African-American and Caribbean Music": {
+    "name": "AFA3300 - African-American and Caribbean Music",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Explore music written and made popular by African Americans and Caribbean artists."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3371 - Evolution of Hip Hop": {
+    "name": "AFA3371 - Evolution of Hip Hop",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "An historical analysis of Hip Hop from its African roots to the present with emphasis on the socio-political implications of this phenomenon."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3955 - Study Abroad in the Caribbean": {
+    "name": "AFA3955 - Study Abroad in the Caribbean",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Interdisciplinary study abroad program focuses on the arts and humanities of African diasporic cultures in the Caribbean."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3102 - Introduction to Africana Studies: A Multidisciplinary Approach": {
+    "name": "AFA3102 - Introduction to Africana Studies: A Multidisciplinary Approach",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Key issues and methodologies in Africana Studies featuring presentations by representative faculty from various disciplines."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3104 - The Black Intellectual Experience": {
+    "name": "AFA3104 - The Black Intellectual Experience",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Interdisciplinary examination of major texts, theories, practices and philosophic foundations in Black intellectual and cultural history."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA4242 - Contemporary Issues in Africana Studies": {
+    "name": "AFA4242 - Contemporary Issues in Africana Studies",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Contemporary topics, emerging crises, shifting trends, and developments in the Africana Diaspora."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA4105 - Documenting Africana Heritage and Life": {
+    "name": "AFA4105 - Documenting Africana Heritage and Life",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Principles and research in the process of documenting Africana heritage and life."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3850 - Researching Africana Heritage and Life": {
+    "name": "AFA3850 - Researching Africana Heritage and Life",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102 or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Principles and processes of researching contributions of traditional Africana people and communities."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFA3006 - The African Diaspora: Theories and Movements": {
+    "name": "AFA3006 - The African Diaspora: Theories and Movements",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ENC 1102."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Provides a broad understanding of the cultural, social, and political experiences that define the African Diaspora."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  }
+}

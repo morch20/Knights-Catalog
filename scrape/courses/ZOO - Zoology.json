@@ -1,0 +1,794 @@
+{
+  "ZOO3454 - Ichthyology": {
+    "name": "ZOO3454 - Ichthyology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete all of the following\nEarn a minimum grade of C in each of the following: \nBSC2010C - Biology I (4)\nBSC2011C - Biology II (4)\nor C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Fish biology and covers (in varying amounts of detail) the following topics: diversity, systematics, functional anatomy, physiology, ecology, evolution and conservation."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO3713C - Comparative Vertebrate Anatomy": {
+    "name": "ZOO3713C - Comparative Vertebrate Anatomy",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "5"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "6"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "A \"C\" (2.0) or better in both BSC 2010C and BSC 2011C, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The vertebrate animals, relationships of organs and systems, and their phylogenetic significance."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$70.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO3733C - Human Anatomy": {
+    "name": "ZOO3733C - Human Anatomy",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "BSC 2010C or equivalent."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Structure of the human body."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$6.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO3733K - Honors Human Anatomy": {
+    "name": "ZOO3733K - Honors Human Anatomy",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "BSC 2010C or equivalent and Consent of Honors."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Basic and functional anatomy in clinically oriented way to study systems within the human body. The lab component of this honors course provides enrichment and an opportunity to view cadaver specimens. With Honors Content."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$6.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO3736C - Exercise Physiology Anatomy": {
+    "name": "ZOO3736C - Exercise Physiology Anatomy",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "2"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "BSC 2010C, C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Gross anatomy for exercise physiology majors."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$6.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO3744 - Neurobiology": {
+    "name": "ZOO3744 - Neurobiology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "BSC 2010C."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Biological principles governing the physiology of the nervous system including electrical properties, chemical signaling, cellular composition, development, injury and regeneration."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO3744H - Honors Neurobiology": {
+    "name": "ZOO3744H - Honors Neurobiology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "BSC 2010C or BSC2010K, BHC student"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Comprehensive discussion of cellular composition of the nervous system and functions of each cell type, electrical and chemical communication; including neuroanatomy and neuropsychology of chemical, somatic and auditory system."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO3755C - Introductory Histology": {
+    "name": "ZOO3755C - Introductory Histology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "PCB 3703C or ZOO 3733C or equivalent."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Basic principles of tissue staining, techniques, microscopy, cellular structure and other basic concepts. An introduction to the formation and structure of the four basic human tissues: Epithelium, Connective, Muscle & Nervous. Familiarizes students with normal cells, tissues structure and ultrastructure imaging."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4205C - Invertebrate Biodiversity": {
+    "name": "ZOO4205C - Invertebrate Biodiversity",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "8"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete all of the following\nEarn a minimum grade of C in each of the following: \nBSC2010C - Biology I (4)\nBSC2011C - Biology II (4)\nPCB3044 - Principles of Ecology (3)\nor C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Comparative biology of invertebrates, emphasizing morphology, evolution, ecology and conservation biology."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$34.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4272 - Ornithology": {
+    "name": "ZOO4272 - Ornithology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete all of the following\nEarn a minimum grade of C in each of the following: \nBSC2011C - Biology II (4)\nor C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Comprehensive course in bird biology covering global diversity, evolution and systematics, anatomy, physiology, behavior, and ecology."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4310C - Vertebrate Evolution & Ecology": {
+    "name": "ZOO4310C - Vertebrate Evolution & Ecology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "6"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "A \"C\" (2.0) or better in all the following; BSC 2010C, BSC 2011C, PCB 3044, and PCB 3063, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Vertebrate evolution and ecology, based on the paleontological and ecological literature. The laboratory places heavy emphasis on classification/identification and field work."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$65.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4405C - Sea Turtle Ecology and Conservation Internship": {
+    "name": "ZOO4405C - Sea Turtle Ecology and Conservation Internship",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete all of the following\nIntern application, C.I.\nComplete the following: \nENC1101 - Composition I (3)"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Provide participants with hands-on field and research experience. Students will gain a foundation in the current state of sea turtle science and conservation."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4462C - Herpetology": {
+    "name": "ZOO4462C - Herpetology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "4"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Earn a minimum grade of C in each of the following: \nBSC2011C - Biology II (4)\nPCB3044 - Principles of Ecology (3)"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Introduction to the biology of the amphibians and reptiles, their classification, evolution, and life histories."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$70.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4480 - Mammalogy": {
+    "name": "ZOO4480 - Mammalogy",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "A \"C\" (2.0) or better in both BSC 2010C and BSC 2011C, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Diversity and biology of mammals from an evolutionary perspective."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4480L - Mammalogy Lab": {
+    "name": "ZOO4480L - Mammalogy Lab",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "1"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "3"
+    },
+    "Corequisites": {
+      "title": "Corequisites",
+      "text": "ZOO 4480."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "This lab will enhance topics covered in the lecture further exploring the anatomy and identification of mammals with hands-on experience."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4513 - Animal Behavior": {
+    "name": "ZOO4513 - Animal Behavior",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "A \"C\" (2.0) or better in PCB 3044. "
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Study of the current ideas in animal behavior, including the mechanism of behavior and evolutionary explanations."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4603C - Embryology/Development": {
+    "name": "ZOO4603C - Embryology/Development",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "5"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "4"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "A \"C\" (2.0) or better in both PCB 3063 and PCB 3023, or PCB 3522, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Concepts of developmental processes. Emphasis on mechanisms underlying vertebrate development."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$22.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4605 - Human Clinical Embryology and Congenital Malformation": {
+    "name": "ZOO4605 - Human Clinical Embryology and Congenital Malformation",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ZOO 3733C."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Advanced functional human clinical embryology with focus on congenital abnormalities."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4701 - Dissection Techniques": {
+    "name": "ZOO4701 - Dissection Techniques",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "4"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete the following: \nZOO3733C - Human Anatomy (4)"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Dissection techniques of the human body to teach students the skills required for the preparation of three dimensional materials(specimens). The primary student population should be junior/senior pre health professional applicants preparing for the basic medical sciences of professional schools."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$70.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4735 - Anatomy of the Head and Neck": {
+    "name": "ZOO4735 - Anatomy of the Head and Neck",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "2"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "PR: BSC 2010C"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Structures of the facial skeleton, oral cavity, the teeth, the gums (gingiva , and the innervation of the head and neck specially the trigeminal nerve, as well as the blood supply, venous and lymphatic drainage of the head and neck including some selective pathological conditions."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4742 - Advanced Neurobiology": {
+    "name": "ZOO4742 - Advanced Neurobiology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ZOO 3744."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Advanced topics in movement, vision, motivation, sex and brain, emotions, biological rhythms, sleep, language, attention, mental illness, development, learning, memory, degeneration, regeneration."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4743C - Clinical Neuroanatomy and Neuroscience": {
+    "name": "ZOO4743C - Clinical Neuroanatomy and Neuroscience",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ZOO 3733C with a B (3.0) or better."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Basic and applied neurosciences with attention to normal function and pathologic states of the nervous system relevant to practice of general medicine and/or neuroscience."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4743K - Honors Clinical Neuroanatomy": {
+    "name": "ZOO4743K - Honors Clinical Neuroanatomy",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "2"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Graduating senior, ZOO 3733C and C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Basic and applied neurosciences with attention to normal function and pathologic states of the nervous system relevant to practice of general medicine and/or neuroscience."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4747C - Clinical Neuroscience": {
+    "name": "ZOO4747C - Clinical Neuroscience",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ZOO 3744 or ZOO 4743C."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Clinically oriented teachings in major neuroscience areas including selected topics in neuropathology, neurooncology, neuroimmunology, neuropharmacology, and neurodiagnostics."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4747K - Honors Clinical Neuroscience": {
+    "name": "ZOO4747K - Honors Clinical Neuroscience",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "ZOO 3744 or ZOO 4743C and BHC"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Clinically oriented teachings of neuroscience areas including selected topics in neuropathology, neuro-oncology, neuroimmunology, neuropharmacology and neurodiagnostics with Honors content."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4753C - Human Histology": {
+    "name": "ZOO4753C - Human Histology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Complete the following: \nZOO3733C - Human Anatomy (4)"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Vast intricacies of the four basic human tissues. Study the normal tissue structure/ultrastructure by observing and assessing microanatomy of certain mammalian organs, but mostly human tissues."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$70.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Medicine"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "College of Medicine Burnett School of Biomedical Sciences"
+    }
+  },
+  "ZOO4756C - Comparative Vertebrate Histology": {
+    "name": "ZOO4756C - Comparative Vertebrate Histology",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Earn a minimum grade of C in each of the following: \nZOO3713C - Comparative Vertebrate Anatomy (5)"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "A comparison of vertebrate anatomy at the tissue level and its evolutionary and phylogenetic significance."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  },
+  "ZOO4910L - Research Experience in Animal Behavior in a Zoo Environment": {
+    "name": "ZOO4910L - Research Experience in Animal Behavior in a Zoo Environment",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "3"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "A minimum grade of a \"B\" (3.0) in ZOO 4513. "
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "An advanced course where students will be observing, documenting, and analyzing animal behavior in a zoological setting."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Sciences"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Biology"
+    }
+  }
+}

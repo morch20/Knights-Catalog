@@ -1,0 +1,83 @@
+{
+  "AFH3200 - African History Since 1870": {
+    "name": "AFH3200 - African History Since 1870",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Sub-Saharan African history from 1870 to the present."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFH3458 - History of South Africa 1652-present": {
+    "name": "AFH3458 - History of South Africa 1652-present",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Grade of 'C' (2.0) or better in ENC 1102 or WOH 2022, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "The history of South Africa from 1652 to the present; topics include colonization and colonialism, African resistance and independence, Apartheid, and the post-Apartheid period."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  },
+  "AFH3100 - African History to 1870": {
+    "name": "AFH3100 - African History to 1870",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Sub-Saharan African institutions and peoples from the earliest time until 1870."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Arts and Humanities"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of History"
+    }
+  }
+}

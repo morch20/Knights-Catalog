@@ -1,0 +1,29 @@
+{
+  "CDA3103C - Computer Logic and Organization": {
+    "name": "CDA3103C - Computer Logic and Organization",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "1"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "COP 3223C with a grade of \"C\" (2.0) or better. "
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Logic design, computer arithmetic, Instruction Set Architecture (MIPS, SPIM simulator), performance, data path, control unit, memory hierarchy, I/O interface."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Engineering and Computer Science"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "Department of Computer Science"
+    }
+  }
+}

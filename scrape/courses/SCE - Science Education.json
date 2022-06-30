@@ -1,0 +1,215 @@
+{
+  "SCE4304 - Teaching Science and Technology to Young Children": {
+    "name": "SCE4304 - Teaching Science and Technology to Young Children",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "(EEC 4604, EEC 4207, EEX 3450, RED 3012, and TSL 4240), and senior standing"
+    },
+    "Corequisites": {
+      "title": "Corequisites",
+      "text": "EEC 4235C, MAE 4300, and RED 4311"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Provides the knowledge and skills needed to plan and implement a discovery science/design technology program for young children in an integrated, interactive curriculum."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  },
+  "SCE4933 - Seminar on Secondary Science Education": {
+    "name": "SCE4933 - Seminar on Secondary Science Education",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "Admission to Secondary Education B.S. - Science Education Track or Science Education Lifelong Learning Track, or Science Education minor, or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "This seminar examines the nature of science, major philosophical and historical developments of science, and their implications on the science classroom."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  },
+  "SCE3053 - Elementary Science for Teaching": {
+    "name": "SCE3053 - Elementary Science for Teaching",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "PR: Admission to Elementary Education B.S. Pending, Education Track, K-6 Certification Track, Professional Studies Track, Lifelong Learning Track or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "This course offers a content knowledge base for elementary school science to address national and state standards."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  },
+  "SCE4361 - Programs in Teaching Science": {
+    "name": "SCE4361 - Programs in Teaching Science",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites/Corequisites": {
+      "title": "Prerequisites/Corequisites",
+      "text": "Admission to the Bachelor of Science in Science Education program or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Special programs, strategies, and materials for middle and secondary school science education majors."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  },
+  "SCE4360 - Science Instructional Analysis": {
+    "name": "SCE4360 - Science Instructional Analysis",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "4"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Corequisites": {
+      "title": "Corequisites",
+      "text": "SCE 3940."
+    },
+    "Prerequisites/Corequisites": {
+      "title": "Prerequisites/Corequisites",
+      "text": "EDG 4410 or C.I.;"
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Course objectives for a school curriculum and methods and materials for the middle grades and high school."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$10.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  },
+  "SCE4633 - Secondary Science Curriculum": {
+    "name": "SCE4633 - Secondary Science Curriculum",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "PR: Admission to Secondary Education B.S Pending or Secondary Education B.S. Science Education Track or Lifelong Learning Track or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "This course examines science curricula (Grades 6-12  and strategies for promoting conceptual development, inquiry learning, technology, and social justice for all students."
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  },
+  "SCE3310 - Teaching Science in Elementary School": {
+    "name": "SCE3310 - Teaching Science in Elementary School",
+    "Credits Hours": {
+      "title": "Credits Hours",
+      "text": "3"
+    },
+    "Lab/Studio/Field Work Hours": {
+      "title": "Lab/Studio/Field Work Hours",
+      "text": "0"
+    },
+    "Prerequisites": {
+      "title": "Prerequisites",
+      "text": "SCE 3XXX Elementary Science for Teaching  and admission to Elementary Education B.S - Education  Track or Lifelong Learning Track or C.I."
+    },
+    "Corequisites": {
+      "title": "Corequisites",
+      "text": "SCE 3XXX Elementary Science for Teaching  and admission to Elementary Education B.S - Education  Track or Lifelong Learning Track or C.I."
+    },
+    "Prerequisites/Corequisites": {
+      "title": "Prerequisites/Corequisites",
+      "text": "SCE 3XXX Elementary Science for Teaching  and admission to Elementary Education B.S - Education  Track or Lifelong Learning Track or C.I."
+    },
+    "Course Description": {
+      "title": "Course Description",
+      "text": "Selected concepts; organizing for instruction; techniques; evaluation procedures."
+    },
+    "Current Fee Per Student": {
+      "title": "Current Fee Per Student",
+      "text": "$10.00"
+    },
+    "College": {
+      "title": "College",
+      "text": "College of Community Innovation and Education"
+    },
+    "Department": {
+      "title": "Department",
+      "text": "School of Teacher Education"
+    }
+  }
+}

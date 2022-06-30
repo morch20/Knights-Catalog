@@ -1,0 +1,149 @@
+{
+  "header": {
+    "title": "Business Minor",
+    "pictureLink": "https://business.uoregon.edu/sites/business1.uoregon.edu/files/styles/responsive-highres/public/slide/image-ug-minors-business-administration-hero.jpg?itok=tvq_tRzc",
+    "subtitle": ""
+  },
+  "programTitle": "Business Minor",
+  "sections": {
+    "College": {
+      "title": "College",
+      "body": {
+        "text": "College of Business Administration"
+      }
+    },
+    "Program Type": {
+      "title": "Program Type",
+      "body": {
+        "text": "Minor"
+      }
+    },
+    "Program Contact Information": {
+      "title": "Program Contact Information",
+      "body": {
+        "p": {
+          "College of Business Administration\nOffice of Professional Development\nBusiness Administration II (BA2), 101\n407-823-218\nopd@ucf.edu": "College of Business Administration\nOffice of Professional Development\nBusiness Administration II (BA2), 101\n407-823-218\nopd@ucf.edu"
+        },
+        "li": {},
+        "h4": {},
+        "h3": {},
+        "h2": {},
+        "courseSections": {
+          "courseSection0": {
+            "text": "College of Business Administration\nOffice of Professional Development\nBusiness Administration II (BA2), 101\n407-823-218\nopd@ucf.edu"
+          }
+        },
+        "links": {
+          "text": {
+            "College of Business Administration": "College of Business Administration",
+            "Office of Professional Development": "Office of Professional Development",
+            "opd@ucf.edu": "opd@ucf.edu"
+          },
+          "url": {
+            "College of Business Administration": "https://business.ucf.edu/",
+            "Office of Professional Development": "https://business.ucf.edu/centers-institutes/office-of-professional-development/",
+            "opd@ucf.edu": "mailto:opd@ucf.edu"
+          }
+        }
+      }
+    },
+    "Program Description": {
+      "title": "Program Description",
+      "body": {
+        "p": {
+          "Not available to Business majors.": "Not available to Business majors."
+        },
+        "li": {
+          "None": "None",
+          "Students must satisfy each courses prerequisites before enrolling in the class.": "Students must satisfy each courses prerequisites before enrolling in the class."
+        },
+        "h4": {},
+        "h3": {
+          "Minor Admission Requirements": "Minor Admission Requirements",
+          "Minor Requirements": "Minor Requirements",
+          "Prerequisite Courses": "Prerequisite Courses"
+        },
+        "h2": {},
+        "courseSections": {
+          "courseSection0": {
+            "text": "Not available to Business majors.\nMinor Admission Requirements\nNone\nMinor Requirements\nNone\nPrerequisite Courses\nStudents must satisfy each courses prerequisites before enrolling in the class."
+          }
+        }
+      }
+    },
+    "Degree Requirements": {
+      "title": "Degree Requirements",
+      "body": {
+        "grandTotalCredits": "Grand Total Credits: 18",
+        "headers": {
+          "header0": {
+            "text": "Required Courses",
+            "credits": "18 Total Credits"
+          }
+        },
+        "courseSections": {
+          "courseSection0": {
+            "text0": "ACG2021 - Principles of Financial Accounting (3)",
+            "text1": "ACG2071 - Principles of Managerial Accounting (3)",
+            "text2": "MAN3025 - Management of Organizations (3)",
+            "text3": "MAR3023 - Marketing (3)",
+            "text4": "QMB3200 - Quantitative Business Tools II (3)",
+            "text5": "FIN3403 - Business Finance (3)"
+          }
+        }
+      }
+    },
+    "Program Details": {
+      "title": "Program Details",
+      "body": {
+        "p": {
+          "None": "None"
+        },
+        "li": {
+          "None": "None",
+          "A minimum GPA of 2.0 is required in all courses used to satisfy the minor.": "A minimum GPA of 2.0 is required in all courses used to satisfy the minor.",
+          "Grades below \"C\" (2.0) or \"S\" grades from other institutions are not accepted.": "Grades below \"C\" (2.0) or \"S\" grades from other institutions are not accepted.",
+          "Courses taken at Florida College System institutions do not substitute for upper division courses.": "Courses taken at Florida College System institutions do not substitute for upper division courses.",
+          "Courses transferred must be formally evaluated for equivalency credit. The student must provide a course syllabus and any other supporting information with his/her petition for this evaluation.": "Courses transferred must be formally evaluated for equivalency credit. The student must provide a course syllabus and any other supporting information with his/her petition for this evaluation.",
+          "At least twelve hours used in the minor must be earned at UCF within the College of Business.": "At least twelve hours used in the minor must be earned at UCF within the College of Business.",
+          "No credit by exam (TSD, Military credit) may be used.": "No credit by exam (TSD, Military credit) may be used.",
+          "Internship, Independent Study, or Directed Research credit cannot be used toward the minor.": "Internship, Independent Study, or Directed Research credit cannot be used toward the minor."
+        },
+        "h4": {},
+        "h3": {
+          "Restricted Electives": "Restricted Electives",
+          "Foreign Language Requirements": "Foreign Language Requirements",
+          "Other Requirements": "Other Requirements"
+        },
+        "h2": {
+          "Total Undergraduate Credit Hours Required: 18": "Total Undergraduate Credit Hours Required: 18"
+        },
+        "courseSections": {
+          "courseSection0": {
+            "header": "Restricted Electives",
+            "text": "Restricted Electives\nNone"
+          },
+          "courseSection1": {
+            "header": "Foreign Language Requirements",
+            "text": "Foreign Language Requirements\nNone"
+          },
+          "courseSection2": {
+            "header": "Total Undergraduate Credit Hours Required: 18",
+            "text": "Total Undergraduate Credit Hours Required: 18"
+          },
+          "courseSection3": {
+            "header": "Other Requirements",
+            "text": "Other Requirements\nA minimum GPA of 2.0 is required in all courses used to satisfy the minor.\nGrades below \"C\" (2.0) or \"S\" grades from other institutions are not accepted.\nCourses taken at Florida College System institutions do not substitute for upper division courses.\nCourses transferred must be formally evaluated for equivalency credit. The student must provide a course syllabus and any other supporting information with his/her petition for this evaluation.\nAt least twelve hours used in the minor must be earned at UCF within the College of Business.\nNo credit by exam (TSD, Military credit) may be used.\nInternship, Independent Study, or Directed Research credit cannot be used toward the minor."
+          }
+        }
+      }
+    }
+  },
+  "buttons": [
+    "FIN - Finance",
+    "MAN - Management",
+    "QMB - Quantitative Methods in Business",
+    "ACG - Accounting General",
+    "MAR - Marketing"
+  ]
+}
