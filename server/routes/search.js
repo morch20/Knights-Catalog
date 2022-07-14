@@ -26,19 +26,10 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-
-    const id = req.params.id.split(':');    
     const p = req.query.p;
+    const id = req.params.id;
 
-    if(id[1] === ''){
-        res.json({});
-        return;
-    }
-
-    let property = {};
-    property[id[0]] =  new RegExp(id[1],"i");
-
-    getMany(client.db(DB), COLL, property, p, res);
+    getMany(client.db(DB), COLL, {'name': new RegExp(id,"i")}, p, res);
 });
 
 module.exports = router;
