@@ -1,9 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 require('dotenv').config();
 
 const searchRoute = require('./routes/search.js');
 
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 
