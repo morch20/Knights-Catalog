@@ -27,8 +27,13 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
 
-    const id = req.params.id.split(':');
+    const id = req.params.id.split(':');    
     const p = req.query.p;
+
+    if(id[1] === ''){
+        res.json({});
+        return;
+    }
 
     let property = {};
     property[id[0]] =  new RegExp(id[1],"i");
