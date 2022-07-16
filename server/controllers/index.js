@@ -1,27 +1,35 @@
 
-const getAll = (db, collection, p, res) => {
+const getAll = async(db, collection, filter, p, res) => {
 
     const page = p || 0;
     const documentsPerPage = 20;
 
-    let numPages;
-    let documents = []
+    let numItems = 0;
+    let documents = [];
 
-    db.collection(collection)
-        .countDocuments()
-        .then( val => numPages = val)
+    await db.collection(collection)
+        .find(filter)
+        .forEach(d => numItems++)
+        .then()
 
-    db.collection(collection)
-        .find()
+    await db.collection(collection)
+        .find(filter)
         .skip(page * documentsPerPage)
         .limit(documentsPerPage)
         .forEach(document => documents.push(document))
         .then(() => {
-            res.status(200).json({'pages': Math.ceil(numPages / 20), 'documents': documents})
+            res.status(200).json(
+                {
+                    'pagination': {
+                        'pages': Math.ceil(numItems / documentsPerPage),
+                        'items': numItems
+                    }, 
+                    'documents': documents
+                })
             
         })
         .catch((err) => {
-            res.status(500).json({error: 'Could not fetch the documents'})
+            res.status(500).json({name: 'Could not fetch the documents', error: err})
             
         })
 }
@@ -29,7 +37,7 @@ const getAll = (db, collection, p, res) => {
 const getMany = (db, collection, property, p, res) => {
 
     const page = p || 0;
-    const documentsPerPage = 10;
+    const documentsPerPage = 20;
 
     let documents = [];
 
@@ -46,4 +54,14 @@ const getMany = (db, collection, property, p, res) => {
           })
 }
 
-module.exports = {getAll, getMany}
+const getCollections = (db, res) => {
+    let coll = {};
+
+    db.listCollections().toArray()
+    .then( array => {
+        array.forEach(({name}) => coll[name] = name)
+        res.send(coll);
+    })
+}
+
+module.exports = {getAll, getMany, getCollections}
