@@ -21,15 +21,15 @@ const COLL = 'search';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    const p = req.query.p;
-    getAll(client.db(DB), COLL, p, res);
+    const page = req.query.p;
+    getAll(client.db(DB), COLL, {}, page, res);
 });
 
 router.get('/:id', (req, res) => {
-    const p = req.query.p;
+    const page = req.query.p;
     const id = req.params.id;
 
-    getMany(client.db(DB), COLL, {'name': new RegExp(id,"i")}, p, res);
+    getMany(client.db(DB), COLL, {'name': new RegExp(id,"i")}, page, res);
 });
 
 module.exports = router;
