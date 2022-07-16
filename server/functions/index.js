@@ -1,11 +1,15 @@
 
-const getFilters = (filterNames, filters) =>{
+const getFilters = (filterNames, filters, regex) =>{
 
     let and = []
     filters.forEach((filter, index) => {
-        const or = filter?.split("-").map(value => {
-                obj = {}
-                obj[filterNames[index]] = value;
+        const or = filter?.split("&").map(value => {
+
+                obj = {};
+
+                if(regex) obj[filterNames[index]] = new RegExp(value);
+                else obj[filterNames[index]] = value;
+
                 return obj
             })
 
