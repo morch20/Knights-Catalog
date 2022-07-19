@@ -549,16 +549,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.first-letter\:font-bold::first-letter {
+  font-weight: 700;
 }
 
-.text-red-600 {
+.first-letter\:text-red-500::first-letter {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
-.first-letter\:text-\[color\:var\(--white\)\]::first-letter {
-  color: var(--white);
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
