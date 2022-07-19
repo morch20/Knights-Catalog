@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     
-    <div className='w-full fixed'>
+    <div className={(toggleMenu) ? 'w-full fixed' : 'w-full fixed bg__blur'}>
 
       <nav className='flex items-center justify-between h-full px-4 sm:px-[3rem] md:px-[4.5rem] pt-8'>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 
         </div>
 
-        <div className={(toggleMenu) ? 'bg__glass__white absolute h-fit top-[35px] w-full lg:hidden' : 'flex items-center lg:hidden'}>
+        <div className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden' : 'flex items-center lg:hidden'}>
           {
             !toggleMenu &&
             <>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       </nav>
 
-      <hr className='bg-[#D9D9D9] w-[80%] mb-3 ml-6 sm:ml-14 sm:w-[90%]'/>
+      <hr className='bg-[#D9D9D9] w-[80%] ml-6 sm:ml-14 sm:w-[90%]'/>
 
     </div>
   )

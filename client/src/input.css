@@ -7,9 +7,14 @@
     --light: #EFEFEF;
     --dark: #131518;
 }
-  
-.bg__glass__white{
-    background: rgba(255, 255, 255, 0.37);
+
+.bg__blur{
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.bg__glass{
+    background: rgba(255, 255, 255, 0.3);
     background-repeat: no-repeat;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
