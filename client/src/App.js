@@ -1,10 +1,18 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {Navbar} from './components'
+import { Home } from './Pages'
 
 const App = () => {
   return (
-  <div className='bg-[color:var(--light)] h-[40rem]'>
-      <Navbar></Navbar>
+  <div className='bg-[color:var(--light)] h-[60rem]'>
+    <BrowserRouter>
+      <Navbar/>
+      <div className='h-[100px]'></div>
+      <Routes>
+        <Route path="/" element={<Home></Home>}/>
+      </Routes>
+    </BrowserRouter>
   </div>
   )
 }
