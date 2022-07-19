@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --yellow: #e4d678;
+    --light: #EFEFEF;
+    --dark: #131518;
+}
+  
+.bg__glass__white{
+    background: rgba(255, 255, 255, 0.37);
+    background-repeat: no-repeat;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 4px;
+}
+
+.nav__links__animation {
+    position: relative;
+}
+
+.nav__links__animation::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--yellow);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav__links__animation:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
