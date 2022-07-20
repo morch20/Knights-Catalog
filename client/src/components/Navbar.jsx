@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import {ReactComponent as Logo} from '../assets/Logo-text.svg'
+import logo from '../assets/Logo-text.svg'
 import { Sling as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
@@ -21,9 +21,9 @@ const Navbar = () => {
     
     <div className={(toggleMenu) ? 'w-full fixed' : 'w-full fixed bg__blur'}>
 
-      <nav className='flex items-center justify-between h-full px-4 sm:px-[3rem] md:px-[4.5rem] pt-8'>
+      <nav className='flex items-center justify-between h-full px-4 xsm:px-[2rem] sm:px-[3rem] md:px-[4.5rem] pt-8 lg:pt-4'>
 
-        <Logo/>
+        <img src={logo} className='2xl:w-[234px] 2xl:h-[84px]'></img>
 
         <div className='hidden lg:block'>
 
