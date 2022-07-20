@@ -5,10 +5,10 @@ import { Home } from './Pages'
 
 const App = () => {
   return (
-  <div className='bg-[color:var(--light)] h-[60rem]'>
+  <div className='bg-[color:var(--light)]'>
     <BrowserRouter>
       <Navbar/>
-      <div className='h-[100px]'></div>
+      <div className='h-[100px] xl:h-[120px]'></div>
       <Routes>
         <Route path="/" element={<Home></Home>}/>
       </Routes>

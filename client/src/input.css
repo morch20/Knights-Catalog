@@ -6,7 +6,7 @@
     --yellow: #e4d678;
     --light: #EFEFEF;
     --dark: #131518;
-    --text-secondary-light: rgba(0, 0, 0, 0.9);
+    --text-secondary-light: rgba(0, 0, 0, 0.8);
 }
 
 .bg__blur{
@@ -15,7 +15,7 @@
 }
 
 .bg__glass{
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     background-repeat: no-repeat;
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
