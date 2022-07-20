@@ -6,18 +6,19 @@
     --yellow: #e4d678;
     --light: #EFEFEF;
     --dark: #131518;
+    --text-secondary-light: rgba(0, 0, 0, 0.9);
 }
 
 .bg__blur{
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
 }
 
 .bg__glass{
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.6);
     background-repeat: no-repeat;
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
     border-radius: 4px;
 }
 
@@ -42,4 +43,12 @@
 .nav__links__animation:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.header__gradient__light{
+    background: radial-gradient(29.29% 55% at 75% 50%,
+     rgba(196, 136, 255, 0.76) 0%, rgba(196, 136, 255, 0.48) 23.14%,
+      rgba(196, 136, 255, 0.289183) 44%, rgba(196, 136, 255, 0.13) 68.5%,
+       rgba(196, 136, 255, 0) 100%);
+    background-blend-mode: darken;
 }
