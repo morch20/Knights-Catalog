@@ -10,7 +10,7 @@ function CustomLink({to, text, className}) {
       <>
         <Link
           to={to}
-          className={match ? className + " nav__links__selected" : className}
+          className={match ? className + " pb-1 nav__links__selected" : className}
         >
           {text}
         </Link>
