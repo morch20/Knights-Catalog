@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import logo from '../assets/Logo-text.svg'
 import { Sling as Hamburger } from 'hamburger-react'
+import CustomLink from './CustomLink';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -9,11 +11,39 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li className='m-5 nav__links__animation '>Undergraduate</li>
-      <li className='m-5 nav__links__animation'>Graduate</li>
-      <li className='m-5 nav__links__animation'>Ratings</li>
-      <li className='my-5 nav__links__animation pb-1 px-5 rounded bg-[color:var(--yellow)] hover:text-white'>Explore</li>
-      <li className='m-5 nav__links__animation text-[color:var(--yellow)]'>UCF Website</li>
+      <li className='m-5'>
+        <CustomLink 
+          to='/undergraduate'
+          className='nav__links__animation' 
+          text='Undergraduate'
+        />
+      </li>
+      <li className='m-5'>
+        <CustomLink 
+            to='/graduate'
+            className='nav__links__animation' 
+            text='Graduate'
+          />
+      </li>
+      <li className='m-5'>
+        <CustomLink 
+            to='/Ratings'
+            className='nav__links__animation' 
+            text='Ratings'
+          />
+      </li>
+      <li className='my-5'>
+        <CustomLink 
+            to='/explore'
+            className=' nav__links__animation pb-1 px-5 rounded bg-[color:var(--yellow)] hover:text-white' 
+            text='Explore'
+          />
+      </li>
+      <li className='m-5 nav__links__animation text-[color:var(--yellow)]'>
+        <a href="https://www.ucf.edu/" target= "_blank" rel="noreferrer">
+          UCF Website
+        </a>
+      </li>
     </>
   )
 
@@ -23,7 +53,9 @@ const Navbar = () => {
 
       <nav className='flex items-center justify-between h-full px-4 xsm:px-[2rem] sm:px-[3rem] md:px-[4.5rem] pt-8 lg:pt-4'>
 
-        <img src={logo} className='2xl:w-[234px] 2xl:h-[84px]'></img>
+        <Link to='/'>
+          <img src={logo} className='2xl:w-[234px] 2xl:h-[84px]'></img>
+        </Link>
 
         <div className='hidden lg:block'>
 
@@ -36,9 +68,20 @@ const Navbar = () => {
         <div className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden' : 'flex items-center lg:hidden'}>
           {
             !toggleMenu &&
-            <>
-              <a href='#' className='hidden rounded sm:block pb-1 px-3 mr-8 font-semibold bg-[color:var(--yellow)] hover:text-white'>Explore</a>
-              <a href='#' className='hidden nav__links__animation sm:block px-3 mr-8 font-semibold text-[color:var(--yellow)]'>UCF Website</a>
+            <>   
+              <CustomLink
+                to='/explore'
+                text='Explore'
+                className=' relative hidden w-fit rounded sm:block pb-1 px-3 mr-8 font-semibold bg-[color:var(--yellow)] hover:text-white'
+              />
+              <a 
+                href="https://www.ucf.edu/"
+                target= "_blank" 
+                rel="noreferrer"
+                className='hidden nav__links__animation sm:block px-3 mr-8 font-semibold text-[color:var(--yellow)]'
+              >
+                  UCF Website
+              </a>
             </>
           }
 
