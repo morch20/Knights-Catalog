@@ -8,38 +8,45 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleHamburger, setToggleHamburger] = useState(false);
+
+  const handleLinkClicked = () =>{
+    setToggleHamburger(false);
+    setToggleMenu(false)
+  }
+
 
   const links = (
     <>
-      <li className='m-5'>
+      <li className='m-5' onClick={handleLinkClicked}>
         <CustomLink 
           to='/undergraduate'
           className='nav__links__animation' 
           text='Undergraduate'
         />
       </li>
-      <li className='m-5'>
+      <li className='m-5' onClick={handleLinkClicked}>
         <CustomLink 
             to='/graduate'
             className='nav__links__animation' 
             text='Graduate'
           />
       </li>
-      <li className='m-5'>
+      <li className='m-5' onClick={handleLinkClicked}>
         <CustomLink 
             to='/Ratings'
             className='nav__links__animation' 
             text='Ratings'
           />
       </li>
-      <li className='my-5'>
+      <li className='my-5' onClick={handleLinkClicked}>
         <CustomLink 
             to='/explore'
             className=' nav__links__animation pb-1 px-5 rounded bg-[color:var(--yellow)] hover:text-white' 
             text='Explore'
           />
       </li>
-      <li className='m-5 nav__links__animation text-[color:var(--yellow)]'>
+      <li className='m-5 nav__links__animation text-[color:var(--yellow)]' onClick={handleLinkClicked}>
         <a href="https://www.ucf.edu/" target= "_blank" rel="noreferrer">
           UCF Website
         </a>
@@ -86,6 +93,8 @@ const Navbar = () => {
           }
 
           <Hamburger
+            toggled={toggleHamburger}
+            toggle={setToggleHamburger}
             size={25}
             duration={0.7}
             onToggle={toggled => {
