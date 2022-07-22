@@ -9,22 +9,22 @@ const Home = () => {
 
         <div className=' lg:pr-10 '>
 
-          <h1 className=' font-semibold text-[2.5rem] xxl:text-[3rem] 2xxl:text-[4rem] pl-4 flex flex-col md:pl-0 2xl:flex-row w-fit'>
+          <h1 className=' font-semibold text-[2.5rem] pl-4 flex flex-col md:pl-0 2xl:flex-row w-fit'>
             <span>
               Step Up Your
             </span> 
-            <span className='text-[color:var(--yellow)] pl-4'>
+            <span className='text-[color:var(--yellow)]'>
               Education
             </span>
           </h1>
 
-          <p className=' max-w-[30rem] xl:max-w-[35rem] 2xl:max-w-[45rem] px-5 md:px-0 md:pr-24 font-normal text-base text-[color:var(--text-secondary-light)] mt-4 xsm:mt-8'>
+          <p className=' max-w-[30rem] 2xl:max-w-[45rem] px-5 md:px-0 md:pr-24 font-normal text-base text-[color:var(--text-secondary-light)] mt-4 xsm:mt-8'>
             Stairs brings together your team's working docs and important discussions. 
             Move projects faster, work more asynchronously, and feel connected
           </p>
 
           <div className='flex'>
-            <button className=' ml-5 sm:ml-0 my-16 md:my-10 lg:my-24 mr-4 rounded-[14px] bg-[color:var(--yellow)] font-bold text-white w-40 h-11 '>
+            <button className=' ml-5 sm:ml-0 my-16 md:my-10 lg:my-24 mr-4 rounded-[14px] bg-[color:var(--yellow)] font-bold text-white w-40 h-11 scale-up-center-active '>
               Start Here!
             </button>
               <img src={arrow} className='w-20 h-20 lg:mt-3 lg:w-fit lg:h-fit'></img>
