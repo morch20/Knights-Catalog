@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
-import logo from '../assets/Logo-text.svg'
-import { Sling as Hamburger } from 'hamburger-react'
-import CustomLink from './CustomLink';
+import logo from '../assets/Logo-text.svg';
+import { Sling as Hamburger } from 'hamburger-react';
+import { CustomLink } from './navigation/index.js';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -56,12 +56,12 @@ const Navbar = () => {
 
   return (
     
-    <div className={(toggleMenu) ? 'w-full fixed' : 'w-full fixed bg__blur'}>
+    <div className={(toggleMenu) ? 'w-full fixed z-10' : 'w-full fixed bg__blur z-10'}>
 
       <nav className='flex items-center justify-between h-full px-4 xsm:px-[2rem] sm:px-[3rem] md:px-[4.5rem] pt-8 lg:pt-4'>
 
         <Link to='/'>
-          <img src={logo} className='2xl:w-[234px] 2xl:h-[84px]'></img>
+          <img src={logo} className='2xl:w-[234px] 2xl:h-[84px]' alt='logo'></img>
         </Link>
 
         <div className='hidden lg:block'>
@@ -100,11 +100,11 @@ const Navbar = () => {
             onToggle={toggled => {
 
               if(toggled){
-                setToggleMenu(true)
+                setToggleMenu(true);
               }
 
               else{
-                setToggleMenu(false)
+                setToggleMenu(false);
               }
             }}
           />
