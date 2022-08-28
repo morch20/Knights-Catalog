@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderImage } from './components/index.js';
-import arrow from '../../assets/arrow.svg';
+import arrow from '../../assets/57.svg';
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
             <button className=' ml-5 sm:ml-0 my-10 lg:my-14 mr-4 rounded-[14px] bg-[color:var(--yellow)] font-bold text-white w-40 h-11 scale-up-center-active'>
               Start Here!
             </button>
-              <img src={arrow} className='w-20 h-20 lg:w-[20%] lg:h-[20%] rotate-12'></img>
+              <img src={arrow} className='w-20 h-20 lg:mt-4 xl:mt-6'></img>
           </div>
 
         </div >
