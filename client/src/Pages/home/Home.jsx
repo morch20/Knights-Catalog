@@ -7,9 +7,9 @@ const Home = () => {
     <>
       <header className='header__gradient__light flex lg:py-0 2xl:pt-20 pl-4 md:pl-[4.5rem] xsm:justify-center md:justify-between'>
 
-        <div>
+        <div className='lg:pl-10'>
 
-          <h1 className=' font-semibold text-[2.5rem] !m-0 pl-4 flex flex-col md:pl-0 2xl:flex-row w-fit'>
+          <h1 className=' font-medium text-[2.5rem] lg:text-[2.8rem] !m-0 pl-4 flex flex-col md:pl-0 2xl:flex-row w-fit slide-right'>
             <span>
               Step Up Your
             </span> 
@@ -18,16 +18,16 @@ const Home = () => {
             </span>
           </h1>
 
-          <p className=' max-w-[30rem] 2xl:max-w-[45rem] pl-5 md:px-0 md:pr-20 font-normal text-base text-[color:var(--text-secondary-light)] mt-4 xsm:mt-8'>
+          <p className=' max-w-[30rem] 2xl:max-w-[45rem] px-5 md:px-0 md:pr-20 font-normal text-base text-[color:var(--text-secondary-light)] mt-10 xsm:mt-14 md:mt-8'>
             Stairs brings together your team's working docs and important discussions. 
             Move projects faster, work more asynchronously, and feel connected
           </p>
 
-          <div className='flex'>
-            <button className=' ml-5 sm:ml-0 my-16 md:my-10 lg:my-24 mr-4 rounded-[14px] bg-[color:var(--yellow)] font-bold text-white w-40 h-11 scale-up-center-active '>
+          <div className='flex slide-up'>
+            <button className=' ml-5 sm:ml-0 my-10 lg:my-14 mr-4 rounded-[14px] bg-[color:var(--yellow)] font-bold text-white w-40 h-11 scale-up-center-active'>
               Start Here!
             </button>
-              <img src={arrow} className='w-20 h-20 lg:mt-3 lg:w-fit lg:h-fit'></img>
+              <img src={arrow} className='w-20 h-20 lg:w-[20%] lg:h-[20%] rotate-12'></img>
           </div>
 
         </div >

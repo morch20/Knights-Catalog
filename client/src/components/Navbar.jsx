@@ -34,7 +34,7 @@ const Navbar = () => {
       </li>
       <li className='m-5' onClick={handleLinkClicked}>
         <CustomLink 
-            to='/Ratings'
+            to='/ratings'
             className='nav__links__animation' 
             text='Ratings'
           />
