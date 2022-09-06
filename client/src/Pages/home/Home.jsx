@@ -24,7 +24,7 @@ const Home = () => {
           </p>
 
           <div className='flex slide-up relative'>
-            <button className=' my-8 rounded-[14px] bg-[color:var(--yellow)] font-bold text-white w-40 h-11 lg:h-12 lg:text-lg hover:bg-yellow-300'>
+            <button className=' my-8 rounded-lg bg-[color:var(--yellow)] font-bold text-white w-40 h-11 lg:h-12 lg:text-lg hover:bg-yellow-300'>
               Start Here!
             </button>
               <img src={arrow} className='w-20 h-20 absolute right-[-5rem] md:right-[-6rem]'></img>

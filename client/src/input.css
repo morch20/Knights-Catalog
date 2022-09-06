@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root{
-    --purple: #c488ff;
+    /* --purple: #c488ff; */
+    --purple: #050040;
     --yellow: #e4d678;
     --light: #EFEFEF;
     --dark: #131518;
@@ -59,38 +60,20 @@
     transform: scale(1);
 }
 
-.header__gradient__light{
-    background: radial-gradient(29.29% 55% at 75% 50%,
-     rgba(196, 136, 255, 0.76) 0%, rgba(196, 136, 255, 0.48) 23.14%,
-      rgba(196, 136, 255, 0.289183) 44%, rgba(196, 136, 255, 0.13) 68.5%,
-       rgba(196, 136, 255, 0) 100%);
-    background-blend-mode: darken;
-}
-
-.scale-up-center-active:active{
-	-webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.scale-up-center-hover:hover{
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
 .scale-up-center-infinite-1{
 	-webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
 	animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
 }
 
 .scale-up-center-infinite-2{
-	-webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite 1s;
-	animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite 1s;
+	-webkit-animation: scale-up-center-small 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite 1s;
+	animation: scale-up-center-small 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite 1s;
 }
 
 @-webkit-keyframes scale-up-center {
     0% {
-        -webkit-transform: scale(0.8);
-                transform: scale(0.8);
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
     }
     100% {
         -webkit-transform: scale(1);
@@ -99,8 +82,8 @@
 }
 @keyframes scale-up-center {
     0% {
-        -webkit-transform: scale(0.8);
-                transform: scale(0.8);
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
     }
     100% {
         -webkit-transform: scale(1);
@@ -108,49 +91,98 @@
     }
 }
 
+@-webkit-keyframes scale-up-center-small {
+  0% {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+  }
+  100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+  }
+  100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+  }
+}
+
 .rotate-scale-up-hover:hover {
 	-webkit-animation: rotate-scale-up 0.65s linear both;
 	        animation: rotate-scale-up 0.65s linear both;
 }
 
- @-webkit-keyframes rotate-scale-up {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
   }
-  @keyframes rotate-scale-up {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
   }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
 
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(200%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+.slide-left {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.slide-right {
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.slide-up {
+  animation: 1.5s ease-out 0s 1 slideInUp;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(200%);
   }
-  .slide-left {
-    animation: 1s ease-out 0s 1 slideInLeft;
+  100% {
+    transform: translatey(0);
   }
+}
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
   
