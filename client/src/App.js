@@ -8,7 +8,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar/>
         <div className='h-[100px] xl:h-[120px]'></div>
-        <div className='mx-8 xsm:mx-10 sm:mx-12 lg:mx-16'>
+        <div className='px-7 xsm:px-10 sm:px-12 lg:px-16 overflow-x-clip'>
           <Routes>
             <Route path="/" element={<Home></Home>}/>
             <Route path="/graduate" element={<Graduate></Graduate>}/>
