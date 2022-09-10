@@ -4,11 +4,16 @@ import logo from '../assets/Logo-text.svg';
 import { Sling as Hamburger } from 'hamburger-react';
 import { CustomLink } from './navigation/index.js';
 import { Link } from 'react-router-dom';
+import useOutsideClick from '../hooks/useOutsideClick.js';
 
 const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleHamburger, setToggleHamburger] = useState(false);
+
+  const ref = useOutsideClick( () => {
+    handleLinkClicked();
+  });
 
   const handleLinkClicked = () =>{
     setToggleHamburger(false);
@@ -72,7 +77,7 @@ const Navbar = () => {
 
         </div>
 
-        <div className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden' : 'flex items-center lg:hidden'}>
+        <div ref={ref} className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden' : 'flex items-center lg:hidden'}>
           {
             !toggleMenu &&
             <>   
