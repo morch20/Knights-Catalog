@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import logo from '../assets/Logo-text.svg';
 import { Sling as Hamburger } from 'hamburger-react';
-import { CustomLink } from './navigation/index.js';
+import { CustomLink } from './index.js';
 import { Link } from 'react-router-dom';
 import useOutsideClick from '../hooks/useOutsideClick.js';
 
@@ -127,7 +127,7 @@ const Navbar = () => {
 
       </nav>
 
-      <hr className='bg-[#D9D9D9] w-[80%] ml-6 sm:ml-14 sm:w-[90%]'/>
+      <hr className='bg-[#D9D9D9] w-[80%] z-[-1] absolute left-1/2 translate-x-[-50%]'/>
 
     </div>
   )
