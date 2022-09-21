@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import { HeaderImage, Card } from './components/index.js';
+import { HeaderImage, Card, DeskGirl } from './components/index.js';
+import { SearchBar } from '../../components/index.js';
 import arrow from '../../assets/57.svg';
 import compareIcon from './assets/compare-svgrepo-com 1.svg';
 import checkIcon from './assets/Check Icon.svg';
-import ratingIcon from './assets/compare-svgrepo-com 1.svg';
+import ratingIcon from './assets/rating-rate-svgrepo-com 1.svg';
 import AOS from 'aos';
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
           </p>
 
           <div className='flex slide-up relative'>
-            <button className=' my-8 rounded-lg bg-[color:var(--yellow)] font-bold text-white w-40 h-11 lg:h-12 lg:text-lg hover:bg-yellow-300'>
+            <button className=' my-8 rounded-lg bg-[color:var(--yellow)] font-semibold text-[color:var(--text-secondary-light)] hover:text-white w-40 h-11 lg:h-12 lg:text-lg active:bg-yellow-300'>
               Start Here!
             </button>
               <img src={arrow} alt='arrow' className='w-20 h-20 absolute right-[-5rem] md:right-[-6rem]'></img>
@@ -82,6 +83,26 @@ const Home = () => {
             last
           />
           </div>
+
+        </section>
+
+        <section className='flex flex-col md:flex-row justify-center md:justify-between items-center my-20 w-full h-full '>
+
+          <div className='w-full md:w-[50%] h-full flex flex-col mb-12 md:m-0'>
+
+            <div className='mb-10 relative'>
+              <h1 className=' text-center text-2xl xsm:text-3xl font-semibold mb-3'>
+                Start Searching Now!
+              </h1>
+              <div className='bg-[color:var(--yellow)] w-[80%] h-1 absolute left-1/2 translate-x-[-50%]'></div>
+            </div>
+
+            <SearchBar className='w-full h-10 ' endpoint={'search'}/>
+
+          </div>
+
+
+          <DeskGirl/> 
 
         </section>
 

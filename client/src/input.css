@@ -9,6 +9,7 @@
     --light: #EFEFEF;
     --dark: #131518;
     --text-secondary-light: rgba(0, 0, 0, 0.8);
+    --text-secondary-dark: rgb(245, 245, 245);
 }
 
 .bg__blur{

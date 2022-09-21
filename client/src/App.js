@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Navbar from './components/Navbar.jsx'
+import { Navbar, Footer } from './components/index.js'
 import { Home, Graduate, Undergraduate, Explore, Ratings } from './Pages/index.js'
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
             <Route path="/ratings" element={<Ratings></Ratings>}/>
           </Routes>
         </div>
+        <Footer/>
       </BrowserRouter>
   )
 }
