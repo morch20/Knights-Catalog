@@ -88,7 +88,11 @@ const Home = () => {
 
         <section className='flex flex-col md:flex-row justify-center md:justify-between items-center my-20 w-full h-full '>
 
-          <div className='w-full md:w-[50%] h-full flex flex-col mb-12 md:m-0'>
+          <div
+            data-aos-duration="2000" 
+            data-aos="fade-up-right" 
+            className='w-full md:w-[50%] h-full flex flex-col mb-12 md:m-0'
+          >
 
             <div className='mb-10 relative'>
               <h1 className=' text-center text-2xl xsm:text-3xl font-semibold mb-3'>
@@ -97,12 +101,15 @@ const Home = () => {
               <div className='bg-[color:var(--yellow)] w-[80%] h-1 absolute left-1/2 translate-x-[-50%]'></div>
             </div>
 
-            <SearchBar className='w-full h-10 ' endpoint={'search'}/>
+            <div data-aos="fade-up-left"  data-aos-duration="1000">
+              <SearchBar className='w-full h-10 ' endpoint={'search'}/>
+            </div>
 
           </div>
 
-
-          <DeskGirl/> 
+          <div data-aos="fade-up-left"  data-aos-duration="2000">
+            <DeskGirl/>
+          </div> 
 
         </section>
 
