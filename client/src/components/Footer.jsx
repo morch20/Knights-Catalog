@@ -4,7 +4,7 @@ import logo from "../assets/Logo-dark.svg"
 const Footer = () => {
     const liClass = ' text-sm md:text-base px-1 my-2 text-center cursor-pointer hover:text-[color:var(--yellow)] '
     return (
-        <footer className="bg-[#131518] w-full h-full flex flex-col justify-between py-6">
+        <footer className="bg-[#131518] w-full h-full flex flex-col justify-between py-6 px-5">
             <ul className="text-white flex flex-col md:flex-row justify-around my-5">
                 <li className={liClass}>About us</li>
                 <li className={liClass}>Contact us</li>

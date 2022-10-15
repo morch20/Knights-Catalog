@@ -52,18 +52,18 @@ export default function SearchBar({ className, endpoint }) {
                 (autoComplete && data.length > 0 )
 
                 ?
-                <ul className='bg__glass absolute z-[1] w-full outline-white rounded-md'>
+                <ul className='bg__glass absolute shadow-md z-10 w-full outline-white rounded-md'>
                 {(data.length > 5)
                     ?
                         data.slice(0,5).map(o => {
                             return (
-                                <li className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] cursor-pointer'>{o.name}</li>
+                                <li className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
                             )
                         })
                     :
                         data.map(o => {
                             return (
-                                <li className='p-1.5 md:p-2 xl:p-3 hover:bg-white cursor-pointer'>{o.name}</li>
+                                <li className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
                             )
                         })}
                 </ul>

@@ -49,7 +49,7 @@ const Home = () => {
 
       <main>
         <section data-aos='fade-up' data-aos-duration='2000' className='relative'>
-          <div className='bg-[#f0f1f6] absolute h-full w-screen z-[-1] top-0 left-[-1.75rem] xsm:left-[-2.5rem] sm:left-[-3rem] lg:left-[-4rem] '>
+          <div className='bg-[#e9ebf0] absolute h-full w-screen z-[-1] top-0 left-[-1.75rem] xsm:left-[-2.5rem] sm:left-[-3rem] lg:left-[-4rem] '>
           </div>
 
           <div className='text-center pt-10 sm:pt-14 '>
@@ -62,7 +62,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className='flex flex-col md:flex-row items-center md:justify-between mt-10 sm:mt-20 md:mt-28'>
+          <div className=' w-full flex flex-col md:flex-row items-center justify-center mt-10 sm:mt-20 md:mt-28'>
             <Card
               title='Compare Programs'
               text='Drive performance and your cress-functional collaborating with easy-to boards'
@@ -76,12 +76,12 @@ const Home = () => {
               iconAlt='check icon'
             />            
             <Card
-            title='Rate Courses'
-            text='Drive performance and your cress-functional collaborating with easy-to boards'
-            iconURL={ratingIcon}
-            iconAlt='rating icon'
-            last
-          />
+              title='Rate Courses'
+              text='Drive performance and your cress-functional collaborating with easy-to boards'
+              iconURL={ratingIcon}
+              iconAlt='rating icon'
+              last
+            />
           </div>
 
         </section>
@@ -107,7 +107,7 @@ const Home = () => {
 
           </div>
 
-          <div data-aos="fade-up-left"  data-aos-duration="2000">
+          <div data-aos="fade-up-left"  data-aos-duration="2000" className=' -z-10'>
             <DeskGirl/>
           </div> 
 

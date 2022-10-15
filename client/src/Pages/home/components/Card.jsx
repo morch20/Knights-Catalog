@@ -10,7 +10,7 @@ const Card = ({iconAlt, iconURL, title, text, last}) => {
                     alt={iconAlt}>
                 </img>
             </div>
-                <div className=' w-[15rem] ssm:w-[18rem] md:w-[95%] lg:w-[85%] h-fit bg-white pt-8 px-6 pb-4 text-center lg:text-left rounded-lg md:!mx-0'>
+                <div className=' shadow-md w-[15rem] sm:w-[18rem] md:w-[95%] lg:w-[85%] h-fit bg-white pt-8 px-6 pb-4 text-center lg:text-left rounded-lg md:!mx-0'>
                     <h3 className='my-4 text-xl font-medium'>
                         {title}
                     </h3>
@@ -19,7 +19,8 @@ const Card = ({iconAlt, iconURL, title, text, last}) => {
                     </p>
                 </div>
                 {!last &&
-                    <div className='bg-[color:var(--yellow)] w-4 h-[2rem] md:h-[6rem] lg:h-[10rem] z-[-1] absolute left-1/2 md:left-[104%] md:top-[40%] md:rotate-90 lg:top-[20%]'></div>}
+                    <div className='bg-[color:var(--yellow)] w-4 h-[4rem] md:h-[6rem] lg:h-[12rem] z-[-1] absolute left-1/2 md:left-[104%] md:top-[40%] md:rotate-90 lg:top-[20%]'></div>
+                }
         </div>
 
      );
