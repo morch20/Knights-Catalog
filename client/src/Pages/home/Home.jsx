@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { HeaderImage, Card, DeskGirl } from './components/index.js';
-import { SearchBar } from '../../components/index.js';
+import { HeaderImage, Card, DeskGirl } from './components';
+import { SearchBarAutoComplete } from '../../components';
 import arrow from '../../assets/57.svg';
 import compareIcon from './assets/compare-svgrepo-com 1.svg';
 import checkIcon from './assets/Check Icon.svg';
@@ -102,7 +102,7 @@ const Home = () => {
             </div>
 
             <div data-aos="fade-up-left"  data-aos-duration="1000">
-              <SearchBar className='w-full h-10 2xl:h-12 ' endpoint={'search'}/>
+              <SearchBarAutoComplete className='w-full h-10 2xl:h-12 ' endpoint={'search'}/>
             </div>
 
           </div>
