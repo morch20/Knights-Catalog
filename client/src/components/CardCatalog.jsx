@@ -3,9 +3,9 @@ import Bubble from './Bubble';
 
 const CardCatalog = ({ data }) => {
   return (
-    <div className=' w-[18rem] h-[20rem] bg-white rounded-md shadow-lg '>
+    <div className=' w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer'>
 
-        <img src={data.header.pictureLink} alt="pic" className='rounded-t-md w-full h-[30%]' />
+        <img src={data.header.pictureLink} alt="picture" className='rounded-t-md w-full h-[30%]' />
 
         <div className='p-5 h-[65%]'>
             <div className='flex flex-col justify-between h-full'>

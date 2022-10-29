@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { AiOutlineSearch } from 'react-icons/ai';
 
-const SearchBar = () => {
+const SearchBar = ({ setValue, className }) => {
+
   return (
-    <div 
-        className='relative w-full' 
-        ref={ref} 
-        onClick={() => {setAutoComplete(true)}}
-    >
+    <div className='relative w-full' >
         <div className={'flex justify-center items-center ' + className}>
             <input
                 type="text"
