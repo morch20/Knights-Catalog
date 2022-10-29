@@ -4,3 +4,4 @@ export {default as SearchBar} from "./SearchBar.jsx";
 export {default as SearchBarAutoComplete} from "./SearchBarAutoComplete.jsx";
 export {default as Footer} from "./Footer.jsx";
 export {default as Bubble} from "./Bubble.jsx";
+export {default as CardCatalog} from "./CardCatalog.jsx";
