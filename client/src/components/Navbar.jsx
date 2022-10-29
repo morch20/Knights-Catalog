@@ -1,12 +1,18 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../assets/Logo-text.svg';
 import { Sling as Hamburger } from 'hamburger-react';
 import { CustomLink } from './index.js';
 import { Link } from 'react-router-dom';
 import useOutsideClick from '../hooks/useOutsideClick.js';
+import AOS from 'aos';
 
 const Navbar = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleHamburger, setToggleHamburger] = useState(false);
@@ -77,7 +83,7 @@ const Navbar = () => {
 
         </div>
 
-        <div ref={ref} className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden' : 'flex items-center lg:hidden'}>
+        <div ref={ref} className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden shadow-lg' : 'flex items-center lg:hidden'}>
           {
             !toggleMenu &&
             <>   
