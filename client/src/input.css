@@ -12,13 +12,24 @@
     --text-secondary-dark: rgb(245, 245, 245);
 }
 
+.flex-basis{
+  flex-basis: auto;
+}
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
+body{
+  background-color: #f5f6f7;
+}
+
 .bg__blur{
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
 }
 
 .bg__glass{
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     background-repeat: no-repeat;
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
@@ -69,6 +80,43 @@
 .scale-up-center-infinite-2{
 	-webkit-animation: scale-up-center-small 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite 1s;
 	animation: scale-up-center-small 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite 1s;
+}
+
+.card-before:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card-before:hover p{
+  transform: translate(0px);
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
 }
 
 @-webkit-keyframes scale-up-center {

@@ -8,7 +8,7 @@ import background from '../assets/Group 9.svg';
 const HeaderImage = () => {
   return (
 
-    <div className='relative m-auto w-full xsm:w-[25rem] h-[15rem] lg:w-[35rem] lg:h-[30rem] xl:w-[40rem] slide-left'>
+    <div className='relative m-auto w-full xsm:w-[25rem] h-[15rem] lg:w-[35rem] lg:h-[30rem] xl:w-[40rem] 2xl:h-[38rem] slide-left'>
         <img
             src={background}
             alt="background"
