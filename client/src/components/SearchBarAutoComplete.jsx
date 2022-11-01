@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { useOutsideClick } from '../hooks';
 
 
-export default function SearchBarAutoComplete({ className, endpoint }) {
+export default function SearchBarAutoComplete({ className, endpoint, route }) {
 
     let [data, setData] = useState([]);
     let [value, setValue] = useState('');
@@ -13,6 +13,8 @@ export default function SearchBarAutoComplete({ className, endpoint }) {
     let ref = useOutsideClick(() => {
         setAutoComplete(false);
     });
+
+    const navigate = useNavigate();
 
     useEffect(() =>{
 
@@ -43,6 +45,7 @@ export default function SearchBarAutoComplete({ className, endpoint }) {
                     onKeyUp={(e) => setValue(e.target.value) }
                     />
                 <button
+                    onClick={() => navigate(`/${route}?value=${value}` )}
                     className="bg-[color:var(--yellow)] w-[25%] xsm:w-[20%] sm:w-[15%] min-h-full pointer flex justify-center items-center rounded-r-lg hover:text-white transition-all active:bg-yellow-300">
                     <AiOutlineSearch size={25}></AiOutlineSearch>
                 </button>
@@ -57,13 +60,13 @@ export default function SearchBarAutoComplete({ className, endpoint }) {
                     ?
                         data.slice(0,5).map(o => {
                             return (
-                                <li className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
+                                <li key={o._id} className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
                             )
                         })
                     :
                         data.map(o => {
                             return (
-                                <li className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
+                                <li key={o._id} className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
                             )
                         })}
                 </ul>

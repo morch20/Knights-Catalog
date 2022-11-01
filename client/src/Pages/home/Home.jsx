@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { HeaderImage, Card, DeskGirl } from './components';
 import { SearchBarAutoComplete } from '../../components';
 import arrow from '../../assets/57.svg';
@@ -12,7 +13,10 @@ const Home = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    window.scrollTo(0, 0);
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -35,7 +39,10 @@ const Home = () => {
           </p>
 
           <div className='flex slide-up relative'>
-            <button className=' my-8 2xl:my-12 rounded-lg bg-[color:var(--yellow)] font-semibold text-[color:var(--text-secondary-light)] hover:text-white w-40 h-11 lg:h-12 lg:text-lg 2xl:text-xl active:bg-yellow-300'>
+            <button
+              onClick={() => navigate('/explore')}
+              className=' my-8 2xl:my-12 rounded-lg bg-[color:var(--yellow)] font-semibold text-[color:var(--text-secondary-light)] hover:text-white w-40 h-11 lg:h-12 lg:text-lg 2xl:text-xl active:bg-yellow-300'
+            >
               Start Here!
             </button>
               <img src={arrow} alt='arrow' className='w-20 h-20 absolute right-[-5rem] md:right-[-6rem]'></img>
@@ -102,7 +109,7 @@ const Home = () => {
             </div>
 
             <div data-aos="fade-up-left"  data-aos-duration="1000">
-              <SearchBarAutoComplete className='w-full h-10 2xl:h-12 ' endpoint={'search'}/>
+              <SearchBarAutoComplete className='w-full h-10 2xl:h-12 ' endpoint={'search'} route='explore' />
             </div>
 
           </div>
