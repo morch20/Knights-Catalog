@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai';
-import useOutsideClick from '../hooks/useOutsideClick.js';
+import { useOutsideClick } from '../hooks';
 
 
 export default function SearchBarAutoComplete({ className, endpoint }) {

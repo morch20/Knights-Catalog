@@ -4,7 +4,7 @@ import logo from '../assets/Logo-text.svg';
 import { Sling as Hamburger } from 'hamburger-react';
 import { CustomLink } from './index.js';
 import { Link } from 'react-router-dom';
-import useOutsideClick from '../hooks/useOutsideClick.js';
+import { useOutsideClick } from '../hooks';
 import AOS from 'aos';
 
 const Navbar = () => {
