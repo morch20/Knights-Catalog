@@ -7,10 +7,12 @@ const getAll = async(db, collection, filter, p, res) => {
     let numItems = 0;
     let documents = [];
 
-    await db.collection(collection)
-        .find(filter)
-        .forEach(d => numItems++)
-        .then()
+    if(p == 0){
+        await db.collection(collection)
+            .find(filter)
+            .forEach(d => numItems++)
+            .then()
+    }
 
     await db.collection(collection)
         .find(filter)
@@ -18,14 +20,17 @@ const getAll = async(db, collection, filter, p, res) => {
         .limit(documentsPerPage)
         .forEach(document => documents.push(document))
         .then(() => {
-            res.status(200).json(
-                {
+
+            if(p == 0){
+                res.status(200).json({
                     'pagination': {
                         'pages': Math.ceil(numItems / documentsPerPage),
                         'items': numItems
                     }, 
                     'documents': documents
                 })
+            }
+            else res.status(200).json(documents);
             
         })
         .catch((err) => {
@@ -34,12 +39,20 @@ const getAll = async(db, collection, filter, p, res) => {
         })
 }
 
-const getMany = (db, collection, property, p, res) => {
+const getMany = async(db, collection, property, p, res) => {
 
     const page = p || 0;
     const documentsPerPage = 20;
 
     let documents = [];
+    let numItems = 0;
+    if(p == 0){
+
+        await db.collection(collection)
+        .find(property)
+        .forEach(d => numItems++)
+        .then()
+    }
 
     db.collection(collection)
         .find(property)
@@ -47,7 +60,17 @@ const getMany = (db, collection, property, p, res) => {
         .limit(documentsPerPage)
         .forEach(doc => documents.push(doc))
         .then(() => {
-            res.status(200).json(documents)
+            
+            if(p == 0){
+                res.status(200).json({
+                    'pagination': {
+                        'pages': Math.ceil(numItems / documentsPerPage),
+                        'items': numItems
+                    }, 
+                    'documents': documents
+                })
+            }
+            else res.status(200).json(documents);
           })
           .catch(err => {
             res.status(500).json({error: err})
