@@ -12,6 +12,10 @@
     --text-secondary-dark: rgb(245, 245, 245);
 }
 
+.grid-auto-fill{
+  grid-template-columns: repeat(auto-fill, 18rem);
+}
+
 .flex-basis{
   flex-basis: auto;
 }

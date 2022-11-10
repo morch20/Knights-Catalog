@@ -1,36 +1,54 @@
 import React, { useState, useEffect } from 'react';
-import { SearchBar, CardCatalog } from '../../components';
+import { useSearchParams } from 'react-router-dom';
+import { SearchBar, CardCatalog, LoadingCircle, Paginate } from '../../components';
 import { regexCode } from '../../utils/constants';
-
-// import { Card } from './components/index.js';
-// import undergraduate from './assets/undergraduate.jpg';
-// import graduate from './assets/graduate.jpg';
-// import rating from './assets/rating.png';
-// import { AiOutlineArrowRight } from 'react-icons/ai';
-
+import notFound from '../../assets/search.svg';
 
 
 const Explore = () => {
 
-    //const [showIcon, setShowIcon] = useState(true);
-    const [searchValue, setSearchValue] = useState('');
+    const [searchParams] = useSearchParams();
+    const [searchValue, setSearchValue] = useState(searchParams.get('value') || '');
     const [searchData, setSearchData] = useState([]);
+    const [isPending, setIsPending] = useState(true);
 
+    const [page, setPage] = useState(0);
+    const [results, setResults] = useState('');
+
+    const loadData = async () =>{
+        if(!isPending)setIsPending(true);
+        
+        try{
+
+            const response = await fetch(`http://localhost:5000/search/${searchValue}?p=${page}`);
+            const values = await response.json();
+
+            if(values.documents){
+                sessionStorage.setItem("pages", values.pagination.pages || 0);
+                sessionStorage.setItem("items", values.pagination.items || 0);
+                setSearchData(values.documents);
+            }
+            else
+                setSearchData(values);
+
+            setIsPending(false);
+
+        }
+        catch (error){
+            console.log(error)
+        }
+
+    }
+    
     useEffect(() => {
-        fetch(`http://localhost:5000/search/${searchValue}`)
-            .then(response => response.json())
-            .then((values) => {
-                if(values.documents)
-                    setSearchData(values.documents);
-                else
-                    setSearchData(values);
-            })
-            .catch(error => console.log(error))
-    }, [searchValue])
+        window.scrollTo(0, 0);
+        loadData();
+
+    }, [page])
 
 
     return ( 
-        <div className='w-full h-full min-h-[50rem] relative '>
+        <div className='flex flex-col items-center w-full h-full min-h-[50rem] relative '>
 
             <div className='md:px-14 lg:px-24 xl:px-32 2xl:px-48'>
                 <div className='my-10 2xl:my-24 relative'>
@@ -39,69 +57,67 @@ const Explore = () => {
                     </h1>
                     <div className='bg-[color:var(--yellow)] w-[80%] h-1 absolute left-1/2 translate-x-[-50%]'></div>
                 </div>
-                <SearchBar setValue={setSearchValue} className='w-full h-10 my-10 2xl:h-12 ' />
+                <SearchBar
+                    fetchData={() => {
+                        if(page !== 0) setPage(0);
+                        else loadData();
+
+                        setResults(searchValue);
+                    }}
+                    value={searchValue} 
+                    setValue={setSearchValue} 
+                    className='w-full h-10 my-10 2xl:h-12 ' 
+                />
 
             </div>
 
-            { searchValue &&
-                <p className='text-xl font-semibold'>
-                    Search results for: "{searchValue}"
-                </p>
-            }
-            <div className=' my-28 flex flex-wrap gap-10 justify-center '>
-                {
-                    searchData?.map(data => {
-                        
-                        if(data.name.search(regexCode) >= 0){
-                            //console.log(data.name)
-                            return (<></>);
-                        }
-                        console.log(data.header.pictureLink === "")
-                        //console.log(data.name)
-                        return (<CardCatalog data={data} />);
-                    })
-                }
-            </div>
-
-            {/* <div 
-                onScroll={(e) => {
-                    if((e.target.scrollLeft + e.target.clientWidth) === e.target.scrollWidth){
-                        setShowIcon(false);
-                    }
-                    else{
-                        if(!showIcon){
-                            setShowIcon(true);
-                        }
-                    }
-                }} 
-                className=' flex flex-nowrap w-full h-max scrolling-wrapper md:py-10 overflow-x-auto overflow-y-hidden '
-            >
-                <Card
-                    url={undergraduate} 
-                    alt='undergraduate image'
-                    title='Undergraduate'
-                    description={'Explore the Undergraduate Catalog'}
-                />
-                <Card
-                    url={graduate}
-                    title='Graduate'
-                    description={'Explore the Graduate Catalog'}
-                    alt='graduate image'
-                />
-                <Card
-                    url={rating}
-                    alt='rating image'
-                    title={'Ratings'}
-                    description={'Explore all the course ratings'}
-                    last
-                />
-
-                {showIcon &&
-                    <div className='absolute top-1/2 right-[-5%] animate-bounce md:hidden'>
-                        <AiOutlineArrowRight size={20}/>
+            {
+                isPending
+                ?
+                    <div className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
+                        <LoadingCircle />
                     </div>
-                }
-            </div> */}
+                :
+                    <>
+                        {
+                            searchData.length > 0 
+                            ?
+
+                                <>
+                                    {
+                                        results &&
+                                        <p className='text-xl font-medium'>
+                                            {sessionStorage.getItem('items')} Search results for: "{results}"
+                                        </p>
+                                    }
+                                    <div className=' w-full my-24 grid grid-auto-fill gap-16 justify-center relative'>
+                                        {
+                                            searchData.map(data => {
+                                                console.log(data)
+                                                if(data.name.search(regexCode) >= 0){
+                                                    return <CardCatalog data={data} key={data._id} course />
+                                                }
+                                                return <CardCatalog data={data} key={data._id} />
+                                            })
+                                        }
+
+                                    </div>
+                                </>
+                            :
+                            <div className=' w-full xsm:w-3/4 sm:w-1/2 2xl:w-1/4 flex-1 flex flex-col justify-around '>
+                                <h2 className='text-2xl text-center font-bold'>
+                                    Not Found
+                                </h2>
+                                <img src={notFound} alt="Not found" />
+                            </div>
+
+                        }
+                            
+                    </>
+            }      
+
+            <Paginate setPage={setPage} />
+
         </div>
      );
 }
