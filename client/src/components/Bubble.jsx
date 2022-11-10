@@ -13,7 +13,7 @@ const Bubble = ({text, limit = 12}) => {
 
   return (
         <p 
-            className='text-center bg-green-100 px-5 py-1 m-1 w-fit h-fit rounded-xl text-sm font-medium text-green-800'
+            className=' first-letter:capitalize text-center bg-green-100 px-5 py-1 m-1 w-fit h-fit rounded-xl text-sm font-medium text-green-800'
             onMouseOver={() => {setShortenText(text)}}
             onMouseLeave={shortenString}  
         >

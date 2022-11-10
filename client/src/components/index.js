@@ -5,3 +5,5 @@ export {default as SearchBarAutoComplete} from "./SearchBarAutoComplete.jsx";
 export {default as Footer} from "./Footer.jsx";
 export {default as Bubble} from "./Bubble.jsx";
 export {default as CardCatalog} from "./CardCatalog.jsx";
+export {default as LoadingCircle} from "./LoadingCircle.jsx";
+export {default as Paginate} from "./Paginate.jsx";
