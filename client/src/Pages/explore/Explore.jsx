@@ -13,7 +13,7 @@ const Explore = () => {
     const [isPending, setIsPending] = useState(true);
 
     const [page, setPage] = useState(0);
-    const [results, setResults] = useState('');
+    const [results, setResults] = useState(searchParams.get('value') || '');
 
     const loadData = async () =>{
         if(!isPending)setIsPending(true);
@@ -53,7 +53,7 @@ const Explore = () => {
             <div className='md:px-14 lg:px-24 xl:px-32 2xl:px-48'>
                 <div className='my-10 2xl:my-24 relative'>
                     <h1 className=' text-center text-2xl xsm:text-3xl 2xl:text-4xl font-semibold mb-3'>
-                        Search through through all our whole catalog, ratings, and more
+                        Search through all our whole catalog, ratings, and more
                     </h1>
                     <div className='bg-[color:var(--yellow)] w-[80%] h-1 absolute left-1/2 translate-x-[-50%]'></div>
                 </div>
