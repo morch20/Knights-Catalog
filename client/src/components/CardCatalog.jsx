@@ -58,7 +58,7 @@ const CardCatalog = ({ data, course }) => {
                     <h3 className=' text-sm text-gray-600'>{  data.header.subtitle}</h3>
                 </div>
 
-                <Bubble text={data.type}/>
+                <Bubble text={data.program}/>
 
             </div>
         </div>
