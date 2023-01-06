@@ -16,7 +16,7 @@ const CardCatalog = ({ data, course }) => {
 
       <div
         
-        className={'rounded-t-md w-full h-[30%] object-cove ' + collegesColors[data.College.text]}
+        className={'rounded-t-md w-full h-[30%] object-cove ' + collegesColors[data.college]}
       />
 
       <div className='p-5 h-[65%]'>
@@ -24,12 +24,12 @@ const CardCatalog = ({ data, course }) => {
               <div>
                   <h1 className='font-semibold mb-3'>{data.name}</h1>
                   <h3 className='text-sm text-gray-600 overflow-hidden text-ellipsis'>
-                      {data['Course Description'] && data['Course Description'].text &&
-(                        (data['Course Description'].text.length > 70)
+                      {data['description']&&
+(                        (data['description'].length > 70)
                         ?
-                        data['Course Description'].text.substring(0,69) + "..."
+                        data['description'].substring(0,69) + "..."
                         :
-                        data['Course Description'].text)
+                        data['description'])
                       }
                   </h3>
               </div>
