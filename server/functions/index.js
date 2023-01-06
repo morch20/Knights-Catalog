@@ -1,17 +1,18 @@
 
-const getFilters = (filterNames, filters, regex) =>{
+const getFilters = (filters, regex) => {
 
     let and = []
-    filters.forEach((filter, index) => {
-        const or = filter?.split("&").map(value => {
 
-                obj = {};
+    for (const key in filters) {
 
-                if(regex) obj[filterNames[index]] = new RegExp(value);
-                else obj[filterNames[index]] = value;
+        const or = filters[key].map(value => {
+            obj = {};
 
-                return obj
-            })
+            if(regex) obj[key.toLowerCase()] = new RegExp(value, "i");
+            else obj[key.toLowerCase()] = value.toLowerCase();
+
+            return obj;
+        });
 
         if(or !== undefined){
             and.push(
@@ -20,14 +21,12 @@ const getFilters = (filterNames, filters, regex) =>{
                 }
             )
         } 
-        
-    })
+    }
 
     if(and.length > 0){
-
         return {
             $and: and 
-            }
+        }
     }
 
     return {}
