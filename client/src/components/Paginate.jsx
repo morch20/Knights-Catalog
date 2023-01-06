@@ -13,7 +13,7 @@ const Paginate = ({ setPage }) => {
         renderOnZeroPageCount={null}
         breakClassName="border flex w-1/2 h-full text-center xsm:p-1 hover:bg-[color:var(--purple)]"
         breakLinkClassName='w-full hover:text-white active:text-[color:var(--yellow)]'
-        containerClassName=' my-10 flex justify-between xsm:justify-around h-10 w-full md:w-3/4 font-medium text-base md:text-lg bg-white text-[color:var(--purple)]'
+        containerClassName=' my-24 flex justify-between xsm:justify-around h-10 w-full md:w-3/4 font-medium text-base md:text-lg bg-white text-[color:var(--purple)]'
         nextClassName="border flex w-1/2 h-full text-center xsm:p-1 rounded-r-md hover:bg-[color:var(--purple)] hover:text-white active:text-[color:var(--yellow)]"
         nextLinkClassName='w-full flex items-center justify-center'
         previousClassName="border flex w-1/2 h-full text-center xsm:p-1 rounded-l-md hover:bg-[color:var(--purple)] hover:text-white active:text-[color:var(--yellow)]"

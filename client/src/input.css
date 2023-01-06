@@ -123,6 +123,41 @@ body{
   transition: 0.5s;
 }
 
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  display: grid;
+  place-content: center;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.10em;
+  height: 1.10em;
+  border: 0.10em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--purple);
+  transform-origin: bottom left;
+  clip-path: polygon(80% 8%, 100% 0, 51% 94%, 3% 75%, 0 66%, 39% 70%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
 @-webkit-keyframes scale-up-center {
     0% {
         -webkit-transform: scale(0.9);
