@@ -1,6 +1,7 @@
 const express = require('express');
 const {MongoClient} = require('mongodb');
 const {getAll, getMany} = require('../controllers/index.js')
+const {getFilters} = require('../functions/index.js')
 
 
 //connect to database
@@ -20,16 +21,20 @@ const COLL = 'search';
 //routes
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
     const page = req.query.p;
-    getAll(client.db(DB), COLL, {}, page, res);
+    const filters = req.body || {};
+
+    getAll(client.db(DB), COLL, getFilters(filters, true), page, res);
 });
 
-router.get('/:id', (req, res) => {
+router.post('/:id', (req, res) => {
     const page = req.query.p;
     const id = req.params.id;
+    const filters = req.body || {};
+    filters['name'] = [id];
 
-    getMany(client.db(DB), COLL, {'name': new RegExp(id,"i")}, page, res);
+    getMany(client.db(DB), COLL, getFilters(filters, true), page, res);
 });
 
 module.exports = router;

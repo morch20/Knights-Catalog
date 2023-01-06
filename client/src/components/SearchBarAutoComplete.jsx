@@ -19,7 +19,9 @@ export default function SearchBarAutoComplete({ className, endpoint, route }) {
     useEffect(() =>{
 
         if(value.length > 2){
-            fetch(`http://localhost:5000/${endpoint}/${value}`)
+            fetch(`http://localhost:5000/${endpoint}/${value}`, {
+                method: 'POST'
+            })
                     .then(response => {
                         return response.json()
                     })
