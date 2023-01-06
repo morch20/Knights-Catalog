@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { SearchBar, CardCatalog, LoadingCircle, Paginate } from '../../components';
+import { SearchBar, CardCatalog, LoadingCircle, Paginate, Filters } from '../../components';
 import { regexCode } from '../../utils/constants';
 import notFound from '../../assets/search.svg';
 
@@ -15,12 +15,20 @@ const Explore = () => {
     const [page, setPage] = useState(0);
     const [results, setResults] = useState(searchParams.get('value') || '');
 
+    const filtersRef = useRef({});
+
     const loadData = async () =>{
         if(!isPending)setIsPending(true);
         
         try{
 
-            const response = await fetch(`http://localhost:5000/search/${searchValue}?p=${page}`);
+            const response = await fetch(`http://localhost:5000/search/${searchValue}?p=${page}`, {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(filtersRef.current)
+            });
             const values = await response.json();
 
             if(values.documents){
@@ -48,10 +56,10 @@ const Explore = () => {
 
 
     return ( 
-        <div className='flex flex-col items-center w-full h-full min-h-[50rem] relative '>
+        <div className='flex flex-col items-center w-full h-full relative '>
 
             <div className='md:px-14 lg:px-24 xl:px-32 2xl:px-48'>
-                <div className='my-10 2xl:my-24 relative'>
+                <div className='my-2 2xl:my-24 relative'>
                     <h1 className=' text-center text-2xl xsm:text-3xl 2xl:text-4xl font-semibold mb-3'>
                         Search through all our whole catalog, ratings, and more
                     </h1>
@@ -69,6 +77,7 @@ const Explore = () => {
                     className='w-full h-10 my-10 2xl:h-12 ' 
                 />
 
+                <Filters value={filtersRef} callback={loadData} setPage={setPage} />
             </div>
 
             {
@@ -84,16 +93,19 @@ const Explore = () => {
                             ?
 
                                 <>
-                                    {
-                                        results &&
-                                        <p className='text-xl font-medium'>
-                                            {sessionStorage.getItem('items')} Search results for: "{results}"
-                                        </p>
-                                    }
-                                    <div className=' w-full my-24 grid grid-auto-fill gap-16 justify-center relative'>
+
+                                    <p className=' my-10 xsm:text-xl font-medium'>
+                                        {
+                                            results &&
+                                            sessionStorage.getItem('items') + ` Search results for: "${results}"`
+                                        } 
+                                    </p>
+
+                                    <div className=' w-full grid grid-auto-fill gap-16 justify-center relative'>
+
                                         {
                                             searchData.map(data => {
-                                                console.log(data)
+                                                //console.log(data)
                                                 if(data.name.search(regexCode) >= 0){
                                                     return <CardCatalog data={data} key={data._id} course />
                                                 }
@@ -119,7 +131,7 @@ const Explore = () => {
             <Paginate setPage={setPage} />
 
         </div>
-     );
+    );
 }
  
 export default Explore;

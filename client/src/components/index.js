@@ -7,3 +7,5 @@ export {default as Bubble} from "./Bubble.jsx";
 export {default as CardCatalog} from "./CardCatalog.jsx";
 export {default as LoadingCircle} from "./LoadingCircle.jsx";
 export {default as Paginate} from "./Paginate.jsx";
+export {default as Filters} from "./Filters.jsx";
+export {default as DropDown} from "./DropDown.jsx";
