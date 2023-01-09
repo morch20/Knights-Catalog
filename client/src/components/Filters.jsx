@@ -201,7 +201,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
                 </div>
         }
 
-        <div className=' hidden p-5 w-full my-1 min-h-[10rem] md:block'>
+        <div className=' hidden w-full md:block'>
 
             <h2 className='text-lg font-medium'>Filter by:</h2>
 
@@ -227,7 +227,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         {
             selectedFilters.length > 0 &&
             
-            <div className='w-full h-1/2 flex flex-wrap gap-5 mt-10 md:mt-0'>
+            <div className='w-full h-1/2 flex flex-wrap gap-5 my-6 '>
 
                 {
                     selectedFilters?.map(i => {

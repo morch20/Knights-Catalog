@@ -93,13 +93,14 @@ const Explore = () => {
                             ?
 
                                 <>
-
-                                    <p className=' mb-10 xsm:text-xl font-medium'>
-                                        {
-                                            results &&
-                                            sessionStorage.getItem('items') + ` Search results for: "${results}"`
-                                        } 
-                                    </p>
+                                    {
+                                        results &&
+                                        <p className=' mb-10 xsm:text-xl font-medium'>
+                                            {
+                                                sessionStorage.getItem('items') + ` Search results for: "${results}"`
+                                            } 
+                                        </p>
+                                    }
 
                                     <div className=' w-full grid grid-auto-fill gap-16 justify-center relative'>
 
