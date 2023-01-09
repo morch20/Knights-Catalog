@@ -31,24 +31,17 @@ const Navbar = () => {
     <>
       <li className='m-5' onClick={handleLinkClicked}>
         <CustomLink 
-          to='/undergraduate'
-          className='nav__links__animation' 
-          text='Undergraduate'
-        />
-      </li>
-      <li className='m-5' onClick={handleLinkClicked}>
-        <CustomLink 
-            to='/graduate'
-            className='nav__links__animation' 
-            text='Graduate'
-          />
-      </li>
-      <li className='m-5' onClick={handleLinkClicked}>
-        <CustomLink 
             to='/ratings'
             className='nav__links__animation' 
             text='Ratings'
           />
+      </li>
+      <li className='m-5' onClick={handleLinkClicked}>
+        <CustomLink 
+          to='/compare_programs'
+          className='nav__links__animation' 
+          text='Compare Programs'
+        />
       </li>
       <li className='my-5' onClick={handleLinkClicked}>
         <CustomLink 
