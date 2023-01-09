@@ -94,7 +94,7 @@ const Explore = () => {
 
                                 <>
 
-                                    <p className=' my-10 xsm:text-xl font-medium'>
+                                    <p className=' mb-10 xsm:text-xl font-medium'>
                                         {
                                             results &&
                                             sessionStorage.getItem('items') + ` Search results for: "${results}"`

@@ -155,7 +155,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         <button
             ref={buttonRef}
             onClick={() => setOpen(!open)} 
-            className={'md:hidden transition duration-500 ease-out bg-white p-3 w-32 rounded-md border md:border-2 flex justify-between items-center ' + (open ? 'border-[color:var(--purple)] text-[color:var(--purple)]' : '')}
+            className={'md:hidden my-5 transition duration-500 ease-out bg-white p-3 w-32 rounded-md border md:border-2 flex justify-between items-center ' + (open ? 'border-[color:var(--purple)] text-[color:var(--purple)]' : '')}
             >
             Filters
             <VscSettings size={20} />
@@ -165,7 +165,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
             open &&
                 <div
                     ref={dialogRef}
-                    className=' bg-[#f9f9f9] p-5 w-full my-1 min-h-[10rem] shadow-md border rounded-md'
+                    className=' bg-[#f9f9f9] p-5 w-full min-h-[10rem] shadow-md border rounded-md'
                 >
                     <h2 className='text-lg font-medium'>Filter by:</h2>
 
