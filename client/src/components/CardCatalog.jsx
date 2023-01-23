@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { collegesColors } from '../utils/constants';
 import AOS from 'aos';
 import Bubble from './Bubble';
@@ -19,8 +19,8 @@ const CardCatalog = ({ data, course }) => {
 
 	if(course){
 		return (
-			<div
-				onClick={() => handleClick(data.name, data.type)} 
+			<Link
+				to={'/' + data.name + '?type=' + data.type}
 				data-aos="zoom-in-up" 
 				className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer'
 			>
@@ -46,13 +46,13 @@ const CardCatalog = ({ data, course }) => {
 
 					</div>
 				</div>
-			</div>
+			</Link>
 		)
 	}
 
 	return (
-		<div 
-			onClick={() => handleClick(data.name, data.type)}
+		<Link 
+			to={'/' + data.name + '?type=' + data.type}
 			data-aos="zoom-in-up" 
 			className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer'
 		>
@@ -74,7 +74,7 @@ const CardCatalog = ({ data, course }) => {
 
 				</div>
 			</div>
-		</div>
+		</Link>
 	)
 }
 
