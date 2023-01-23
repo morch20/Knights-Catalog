@@ -98,12 +98,8 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
 
         
         if(option === 'Course'){
-            fetch('http://localhost:5000/undergraduate/codes')
-            .then(response => response.json())
-            .then(data => {
-                setFilters([...filters, {title: 'Code', options: Object.keys(data).sort()}])
-            })
-            .catch(e => console.log(e));
+            const codes = sessionStorage.getItem('codes');
+            setFilters([...filters, {title: 'Code', options: Object.values(JSON.parse(codes)).sort()}]);
         }
         
         setPage(0);

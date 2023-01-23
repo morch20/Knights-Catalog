@@ -158,6 +158,11 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
+.header-gradient{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.4992121848739496) 0%, rgba(0,0,0,0.24711134453781514) 50%, rgba(0,212,255,0) 100%);
+}
+
 @-webkit-keyframes scale-up-center {
     0% {
         -webkit-transform: scale(0.9);
