@@ -76,7 +76,7 @@ router.get('/courses', (req, res) => {
 router.get('/courses/:id', (req, res) => {
     const p = req.query.p;
     const id = req.params.id;
-    const code = (req.headers.code === undefined || req.headers.code === '') ? new RegExp() : req.headers.code;
+    const code = (req.query.code === undefined || req.query.code === '') ? new RegExp() : req.query.code;
     console.log(code)
 
     getMany(client.db('undergraduateCourses'), code, {'name': new RegExp(id,"i")}, p, res);
