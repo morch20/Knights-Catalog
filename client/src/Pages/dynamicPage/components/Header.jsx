@@ -49,8 +49,8 @@ const Header = ({ title, college, description, course }) => {
             </div>
 
             <div className='w-full md:w-4/5 lg:w-3/5 text-white mt-10 xsm:mt-20 mb-8'>
-                <h3 className='text-xl md:text-2xl '>{description.title}</h3>
-                <p className=' text-sm xsm:text-base md:text-lg mt-3 xsm:mt-5'>{description.text}</p>
+                <h3 className='text-xl md:text-2xl '>{description?.title}</h3>
+                <p className=' text-sm xsm:text-base md:text-lg mt-3 xsm:mt-5'>{description?.text}</p>
             </div>
 
             {
