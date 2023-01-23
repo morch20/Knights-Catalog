@@ -2,13 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { LoadingCircle} from '../../../components';
 import DividerContent from '../components/DividerContent';
 import Header from '../components/Header';
+import notFound from '../../../assets/search.svg'
 
 const Course = ({ name }) => {
 
     const [data, setData] = useState({});
     const [pending, setPending] = useState(true);
+    let codesFound = true;
 
-    const code = JSON.parse(sessionStorage.getItem('codes'))[name.substring(0,3)];
+    let code = JSON.parse(localStorage.getItem('codes'));
+    if(code === null){
+        codesFound = false;
+    }
+    else{
+        code = code[name.substring(0,3)];
+    }
 
     useEffect(() => {
         fetch('http://localhost:5000/undergraduate/courses/' + name + '?code=' + code)
@@ -63,8 +71,11 @@ const Course = ({ name }) => {
 
                                 </div>
                             :
-                                <div>
-                                    NOT FOUND
+                                <div className=' mx-auto w-full xsm:w-3/4 sm:w-1/2 2xl:w-1/4 flex-1 flex flex-col justify-around '>
+                                    <h2 className='text-2xl text-center font-bold'>
+                                        { codesFound ? 'Course not found' : 'Something went wrong. Plz reload the page :('} 
+                                    </h2>
+                                    <img src={notFound} alt="Not found" />
                                 </div>
                         }
                     </>

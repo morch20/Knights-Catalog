@@ -1,25 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { Navbar, Footer } from './components/index.js'
 import { Home, ComparePrograms, Explore, Ratings, DynamicPage } from './Pages/index.js'
 
 const App = () => {
 
-  fetch('http://localhost:5000/undergraduate/codes')
-    .then(response => response.json())
-    .then(data => {
+  useEffect(() => {
 
-        const temp = {};
+    fetch('http://localhost:5000/undergraduate/codes')
+      .then(response => response.json())
+      .then(data => {
+  
+          const temp = {};
+  
+          for (const key in data) {
+              if (Object.hasOwnProperty.call(data, key)) {
+                  const element = data[key];
+                  temp[key.substring(0, 3)] = element; 
+              }
+          }
+          localStorage.setItem('codes', JSON.stringify(temp));
+      })
+      .catch(e => console.log(e));
+  }, [])
 
-        for (const key in data) {
-            if (Object.hasOwnProperty.call(data, key)) {
-                const element = data[key];
-                temp[key.substring(0, 3)] = element; 
-            }
-        }
-        sessionStorage.setItem('codes', JSON.stringify(temp));
-    })
-    .catch(e => console.log(e));
 
   return (
       <BrowserRouter>
