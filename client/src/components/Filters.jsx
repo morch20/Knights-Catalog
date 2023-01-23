@@ -98,7 +98,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
 
         
         if(option === 'Course'){
-            const codes = sessionStorage.getItem('codes');
+            const codes = localStorage.getItem('codes');
             setFilters([...filters, {title: 'Code', options: Object.values(JSON.parse(codes)).sort()}]);
         }
         
