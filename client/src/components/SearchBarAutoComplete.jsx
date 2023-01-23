@@ -16,6 +16,10 @@ export default function SearchBarAutoComplete({ className, endpoint, route }) {
 
     const navigate = useNavigate();
 
+    const handleNavigate = (routeValue = value) => {
+        navigate(`/${route}?value=${routeValue}` );
+    };
+
     useEffect(() =>{
 
         if(value.length > 2){
@@ -44,11 +48,17 @@ export default function SearchBarAutoComplete({ className, endpoint, route }) {
                     type="text"
                     placeholder="Search..."
                     className="w-[75%] h-full xsm:w-[80%] sm:w-[85%] bg-gray-200 py-1 pl-4 rounded-l-lg outline-none"
-                    onKeyUp={(e) => setValue(e.target.value) }
+                    onKeyUp={(e) => {
+                        if(e.key === 'Enter'){
+                            handleNavigate();
+                        }
+                        else setValue(e.target.value);
+                    } }
                     />
                 <button
-                    onClick={() => navigate(`/${route}?value=${value}` )}
-                    className="bg-[color:var(--yellow)] w-[25%] xsm:w-[20%] sm:w-[15%] min-h-full pointer flex justify-center items-center rounded-r-lg hover:text-white transition-all active:bg-yellow-300">
+                    onClick={() => handleNavigate()}
+                    className="bg-[color:var(--yellow)] w-[25%] xsm:w-[20%] sm:w-[15%] min-h-full pointer flex justify-center items-center rounded-r-lg hover:text-white transition-all active:bg-yellow-300"
+                >
                     <AiOutlineSearch size={25}></AiOutlineSearch>
                 </button>
             </div>
@@ -62,13 +72,25 @@ export default function SearchBarAutoComplete({ className, endpoint, route }) {
                     ?
                         data.slice(0,5).map(o => {
                             return (
-                                <li key={o._id} className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
+                                <li
+                                    onClick={() => handleNavigate(o.name)}
+                                    key={o._id} 
+                                    className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'
+                                >
+                                    {o.name}
+                                </li>
                             )
                         })
                     :
                         data.map(o => {
                             return (
-                                <li key={o._id} className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'>{o.name}</li>
+                                <li 
+                                    onClick={() => handleNavigate(o.name)}
+                                    key={o._id} 
+                                    className=' p-1.5 md:p-2 xl:p-3 hover:bg-[color:var(--yellow)] hover:shadow rounded cursor-pointer'
+                                >
+                                    {o.name}
+                                </li>
                             )
                         })}
                 </ul>

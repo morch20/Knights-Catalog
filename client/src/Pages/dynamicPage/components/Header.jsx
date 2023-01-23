@@ -8,7 +8,7 @@ const Header = ({ title, college, description, course }) => {
     
     college = (college === 'The Burnett Honors College') ? 'Burnett Honors College' : college;
     const color = collegesColors[college];
-    const headerHeight = ' h-[30rem] xsm:h-[30rem] ';
+    const headerHeight = ' h-[33rem] ';
     const starts = [1, 2, 3, 4, 5];
 
     return (
