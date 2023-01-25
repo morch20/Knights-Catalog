@@ -32,7 +32,7 @@ router.post('/:id', (req, res) => {
     const page = req.query.p;
     const id = req.params.id;
     const filters = req.body || {};
-    filters['name'] = [id];
+    filters['name'] = [id.replace('(', String.raw`\(`).replace(')', String.raw`\)`)];
 
     getMany(client.db(DB), COLL, getFilters(filters, true), page, res);
 });
