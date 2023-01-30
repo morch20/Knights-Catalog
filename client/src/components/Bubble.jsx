@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Bubble = ({text, limit = 12}) => {
+const Bubble = ({text, gray = undefined, limit = 12}) => {
 
     const [shortenText, setShortenText] = useState(text.length > limit ? text.substring(0, limit) + " ..." : text);
 
@@ -13,7 +13,9 @@ const Bubble = ({text, limit = 12}) => {
 
   return (
         <p 
-            className=' first-letter:capitalize text-center bg-green-100 px-5 py-1 m-1 w-fit h-fit rounded-xl text-sm font-medium text-green-800'
+            className={' transition-all first-letter:capitalize text-center  px-5 py-1 m-1 w-fit h-fit rounded-xl text-sm font-medium '
+                + (gray ? ' bg-gray-200 + text-gray-700' : ' bg-green-100 text-green-800')
+            }
             onMouseOver={() => {setShortenText(text)}}
             onMouseLeave={shortenString}  
         >

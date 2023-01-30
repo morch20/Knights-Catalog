@@ -4,7 +4,7 @@ import { BsFillHandThumbsUpFill } from 'react-icons/bs';
 import { collegesColors } from '../../../utils/constants';
 import { Bubble } from '../../../components';
 
-const Header = ({ title, college, description, course }) => {
+const Header = ({ title, college, description, type, img = undefined }) => {
     
     college = (college === 'The Burnett Honors College') ? 'Burnett Honors College' : college;
     const color = collegesColors[college];
@@ -13,8 +13,23 @@ const Header = ({ title, college, description, course }) => {
 
     return (
         <div className={' overflow-x-clip py-10' + headerHeight }>
-            <span className={'absolute -z-[5] left-0 top-0 w-full my-[100px] header-gradient ' + headerHeight } />
-            <span className={'absolute -z-10 left-0 top-0 w-full my-[100px] ' + color + headerHeight }/>
+            {
+                type === 'program' && img
+                ?
+                    <>
+                        <span className={'absolute -z-[5] left-0 top-0 w-full my-[100px] header-gradient-darker ' + headerHeight } />
+                        <img 
+                            src={img} 
+                            alt="picture" 
+                            className={'absolute -z-10 left-0 top-0 w-full my-[100px] object-cover ' + headerHeight}
+                        />
+                    </>
+                :
+                    <>
+                        <span className={'absolute -z-[5] left-0 top-0 w-full my-[100px] header-gradient ' + headerHeight } />
+                        <span className={'absolute -z-10 left-0 top-0 w-full my-[100px] ' + headerHeight + color }/>
+                    </>
+            }
 
             <div className='text-center md:text-start w-full lg:w-1/2 text-white'>
 
@@ -49,14 +64,34 @@ const Header = ({ title, college, description, course }) => {
             </div>
 
             <div className='w-full md:w-4/5 lg:w-3/5 text-white mt-10 xsm:mt-20 mb-8'>
-                <h3 className='text-xl md:text-2xl '>{description?.title}</h3>
-                <p className=' text-sm xsm:text-base md:text-lg mt-3 xsm:mt-5'>{description?.text}</p>
+                {
+                    type === 'course'
+                    ?
+                        <>
+                            <h3 className='text-xl md:text-2xl '>{description?.title}</h3>
+                            <p className=' text-sm xsm:text-base md:text-lg mt-3 xsm:mt-5'>{description?.text}</p>
+                        </>
+                    :
+                        <>
+                            {
+                                description &&
+                                <>
+                                    <h3 className='text-xl md:text-2xl '>Program Description</h3>
+                                    <p className=' text-sm xsm:text-base md:text-lg mt-3 xsm:mt-5'>{description}</p>
+                                </>
+                            }
+                        </>
+                }
             </div>
 
             {
                 
-                course &&
-                <Bubble text={ (parseInt(title[3]) <= 4 ) ? 'Undergraduate' : 'Graduate'} limit={20} />
+                type === 'course'
+                ?   
+                    <Bubble text={ (parseInt(title[3]) <= 4 ) ? 'Undergraduate' : 'Graduate'} limit={20} />
+                :
+                    <Bubble text='Undergraduate' limit={20} /> //TODO Change later
+
             }
 
         </div>

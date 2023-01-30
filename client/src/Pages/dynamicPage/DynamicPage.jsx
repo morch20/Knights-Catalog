@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Course from './containers/Course';
+import Program from './containers/Program';
 import { useLocation, useSearchParams } from 'react-router-dom';
 
 const DynamicPage = () => {
@@ -21,7 +22,7 @@ const DynamicPage = () => {
     }
 
 	return (
-		<div>{pathname}</div>
+        <Program name={name}/>
 	)
 }
 

@@ -52,7 +52,7 @@ const Course = ({ name }) => {
                                         title={data[0].name} 
                                         college={data[0].College.text}
                                         description={data[0]['Course Description']}
-                                        course
+                                        type='course'
                                     />
 
                                 <div className='w-full h-full my-8'>
