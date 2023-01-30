@@ -38,7 +38,7 @@ router.get('/codes', (req, res) =>{
 
 //get full program
 router.get('/program/:id', (req, res) =>{
-    const college = req.headers.college;
+    const college = req.query.college;
     const program = req.params.id;
 
     getMany(client.db('undergraduatePrograms'), college, {'name': program}, 0, res)
