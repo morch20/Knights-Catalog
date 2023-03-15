@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import { useSearchParams } from 'react-router-dom';
 import { LoadingCircle, Bubble } from '../../../components';
+import ProgramDetails from '../components/ProgramDetails';
+import DividerContent from '../components/DividerContent';
+import Section from '../components/Section';
 
 
 const Program = ({name}) => {
@@ -10,6 +13,7 @@ const Program = ({name}) => {
 	const college = searchParams.get('college');
 
 	const [data, setData] = useState(null);
+	const [sections, setSections] = useState([]);
 	const [showMoreSkills, setShowMoreSkills] = useState(false);
 
 	useEffect(() => {
@@ -17,7 +21,42 @@ const Program = ({name}) => {
 		.then(response => response.json())
 		.then(currData => {
 			console.log(currData);
-			setData(currData.documents[0])
+
+			let lst = []
+			const object = currData.documents[0].sections;
+			for (const key in object) {
+				if (object.hasOwnProperty(key)) {
+					const section = object[key];
+					
+					const {p, h3, li, h2, h4, courseSections, links} = section["body"];
+					
+					if(courseSections === undefined){
+						lst.push(
+							<DividerContent title={key} text={section.body.text} />
+						);
+					}
+					
+					else{
+						lst.push(
+							<Section 
+								section={courseSections}
+								p={p}
+								li={li} 
+								h3={h3}
+								h2={h2}
+								h4={h4}
+								links = {links}
+								title={section.title}
+								headers={section.body.headers}
+								grandTotalCredits={section.body.grandTotalCredits}
+							/>
+						);
+					}
+				}
+			}
+
+			setData(currData.documents[0]);
+			setSections(lst);
 		})
 		.catch(e => console.log(e))
 	}, [])
@@ -71,6 +110,10 @@ const Program = ({name}) => {
 							}
 
 						</div>
+
+						{
+							sections.map(i => i)
+						}
 					</div>
 				:
 				<div className='w-full h-[70vh]'>
