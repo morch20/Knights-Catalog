@@ -76,7 +76,7 @@ const Navbar = () => {
 
         </div>
 
-        <div ref={ref} className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] w-full lg:hidden shadow-lg' : 'flex items-center lg:hidden'}>
+        <div ref={ref} className={(toggleMenu) ? 'bg__glass absolute h-fit top-[35px] right-0 w-full max-w-[30rem] lg:hidden shadow-lg' : 'flex items-center lg:hidden'}>
           {
             !toggleMenu &&
             <>   
