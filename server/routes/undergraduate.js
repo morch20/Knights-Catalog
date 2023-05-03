@@ -41,7 +41,7 @@ router.get('/program/:id', (req, res) =>{
     const college = req.query.college;
     const program = req.params.id;
 
-    getMany(client.db('undergraduatePrograms'), college, {'name': program}, 0, res)
+    getMany(client.db('undergraduatePrograms'), college, {'name': program}, 0, res);
 })
 
 //programs
@@ -76,8 +76,11 @@ router.get('/courses', (req, res) => {
 router.get('/courses/:id', (req, res) => {
     const p = req.query.p;
     const id = req.params.id;
-    const code = (req.query.code === undefined || req.query.code === '') ? new RegExp() : req.query.code;
-    console.log(code)
+    let code = (req.query.code === undefined || req.query.code === '') ? new RegExp() : req.query.code;
+    const index = code.indexOf("ampersand");
+    if(index !== -1){
+        code = code.substring(0, index) + '&' + code.substring(index + "ampersand".length);
+    } 
 
     getMany(client.db('undergraduateCourses'), code, {'name': new RegExp(id,"i")}, p, res);
 });
