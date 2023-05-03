@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { LoadingCircle} from '../../../components';
 import DividerContent from '../components/DividerContent';
 import Header from '../components/Header';
-import notFound from '../../../assets/search.svg'
+import notFound from '../../../assets/search.svg';
+import replaceSymbol from '../../../utils/functions';
 
 const Course = ({ name }) => {
 
@@ -15,7 +16,7 @@ const Course = ({ name }) => {
         codesFound = false;
     }
     else{
-        code = code[name.substring(0,3)];
+        code = replaceSymbol(code[name.substring(0,3)], '&', 'ampersand');
     }
 
     useEffect(() => {
