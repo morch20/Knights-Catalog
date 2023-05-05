@@ -10,12 +10,12 @@ const FilterTags = ({element, links, li}) => {
     if(element.search(regexCode) === 0){
         tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
         courseTag = <CourseTag text={element.substring(0,8)} />
-        element = (element[7] === "C" || element[7] === "L") ? element.substring(8, element.length): element.substring(7, element.length);
+        element = (element[7] === "C" || element[7] === "L" || element[7] === "H" || element[7] === "K") ? element.substring(8, element.length): element.substring(7, element.length);
     }
     else if(element.search(regexCodeWithSpace) === 0){
         tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
         courseTag = <CourseTag text={element.substring(0,9)} />
-        element = (element[8] === "C" || element[8] === "L") ? element.substring(9, element.length): element.substring(8, element.length);
+        element = (element[8] === "C" || element[8] === "L" || element[8] === "H" || element[8] === "K") ? element.substring(9, element.length): element.substring(8, element.length);
     }
     else{
         if(links !== undefined){

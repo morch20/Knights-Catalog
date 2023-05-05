@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DividerContent = ({ title, text }) => {
+const DividerContent = ({ title, text, children }) => {
 
-    if(!text || !title) return;
+    if(!text && !title) return;
 
     return (
         <div className='my-8'>
@@ -11,7 +11,13 @@ const DividerContent = ({ title, text }) => {
             </h3>
             <hr/>
             <p className='my-1 text-gray-700 md:text-lg'>
-                {text}
+                {
+                    !text
+                    ?
+                        children
+                    :
+                        text
+                }
             </p>
         </div>
     )

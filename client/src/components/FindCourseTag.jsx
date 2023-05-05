@@ -1,10 +1,9 @@
 import React from 'react';
 import CourseTag from './CourseTag';
-import { regexCodeWithSpace } from '../utils/constants';
 
-const FindCourseTag = ({ text }) => {
+const FindCourseTag = ({ text, newTab = true }) => {
     
-    const matches = [...text.matchAll(new RegExp(regexCodeWithSpace, 'g'))];
+    const matches = [...text.matchAll(new RegExp(/[A-Z]{3}(\s?)[0-9]{4}/, 'g'))];
     let values = [];
     
     const generateAddingIndex = (text) => {
@@ -18,7 +17,7 @@ const FindCourseTag = ({ text }) => {
     matches.forEach(i => {
         if(i.index === 0){
             addingIndex = generateAddingIndex(text.substring(i.index, i.index + 9));
-            values.push(<CourseTag text={text.substring(i.index, i.index + addingIndex)} newTab />);
+            values.push(<CourseTag text={text.substring(i.index, i.index + addingIndex)} newTab={newTab} />);
             
             first = false;
         }
@@ -27,14 +26,14 @@ const FindCourseTag = ({ text }) => {
                 values.push(<p>{text.substring(0, i.index)}</p>);
                 first = false;
                 addingIndex = generateAddingIndex(text.substring(i.index, i.index + 9));
-                values.push(<CourseTag text={text.substring(i.index, i.index + addingIndex)} newTab />);
+                values.push(<CourseTag text={text.substring(i.index, i.index + addingIndex)} newTab={newTab} />);
                 
 
             }
             else{
                 values.push(<p>{text.substring(prev, i.index)}</p>)
                 addingIndex = generateAddingIndex(text.substring(i.index, i.index + 9));
-                values.push(<CourseTag text={text.substring(i.index, i.index + addingIndex)} newTab />);
+                values.push(<CourseTag text={text.substring(i.index, i.index + addingIndex)} newTab={newTab} />);
                 
             }
         }
