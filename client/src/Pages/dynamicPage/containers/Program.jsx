@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import { useSearchParams } from 'react-router-dom';
 import { LoadingCircle, Bubble } from '../../../components';
-import ProgramDetails from '../components/ProgramDetails';
+import notFound from '../../../assets/search.svg';
 import DividerContent from '../components/DividerContent';
 import Section from '../components/Section';
 
@@ -13,10 +13,12 @@ const Program = ({name}) => {
 	const college = searchParams.get('college');
 
 	const [data, setData] = useState(null);
+	const [loading, setLoading] = useState(false);
 	const [sections, setSections] = useState([]);
 	const [showMoreSkills, setShowMoreSkills] = useState(false);
 
 	useEffect(() => {
+		setLoading(true);
 		fetch('http://localhost:5000/undergraduate/program/' + name + '?college=' + college)
 		.then(response => response.json())
 		.then(currData => {
@@ -54,73 +56,90 @@ const Program = ({name}) => {
 					}
 				}
 			}
-
+			setLoading(false);
 			setData(currData.documents[0]);
 			setSections(lst);
 		})
-		.catch(e => console.log(e))
+		.catch(e => {
+			console.log(e);
+			setLoading(false);
+		})
 	}, [])
 
 
 	return (
 		<>
 			{
-				data
+				loading
 				?
-					<div>
-						<Header
-							title={data.programTitle} 
-							description={data.header.subtitle}
-							college={college}
-							type='program'
-							img={data.header.pictureLink}
-						/>
-
-						<div className='my-20 p-7 border w-full h-full'>
-
-							<h3 className='text-gray-500 text-base mb-5 font-semibold'>SKILLS YOU WILL LEARN</h3>
-
-							<div className='flex w-full h-full flex-wrap gap-5 mb-5'>
-								{
-									data.buttons.length > 12 && !showMoreSkills
-									?
-
-										data.buttons.slice(0, 12).map( i => {
-											return <Bubble text={i} limit={25} gray/>
-										})
-
-									:
-										data.buttons.map( i => {
-											return <Bubble text={i} limit={25} gray/>
-										})
-										
-								}
-							</div>
-
-							{
-								data.buttons.length > 12 &&
-								<p
-									onClick={() => setShowMoreSkills(!showMoreSkills)} 
-									className='text-blue-500 cursor-pointer'
-								>
-									{
-										showMoreSkills ? 'Show less' : 'Show all'
-									}
-								</p>
-							}
-
+					<div className='w-full h-[70vh]'>
+						<div className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
+							<LoadingCircle />
 						</div>
-
-						{
-							sections.map(i => i)
-						}
 					</div>
 				:
-				<div className='w-full h-[70vh]'>
-					<div className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
-						<LoadingCircle />
-					</div>
-				</div>
+					<>
+						{
+							data
+							?
+								<div>
+									<Header
+										title={data.programTitle} 
+										description={data.header.subtitle}
+										college={college}
+										type='program'
+										img={data.header.pictureLink}
+									/>
+
+									<div className='my-20 p-7 border w-full h-full'>
+
+										<h3 className='text-gray-500 text-base mb-5 font-semibold'>SKILLS YOU WILL LEARN</h3>
+
+										<div className='flex w-full h-full flex-wrap gap-5 mb-5'>
+											{
+												data.buttons.length > 12 && !showMoreSkills
+												?
+
+													data.buttons.slice(0, 12).map( i => {
+														return <Bubble text={i} limit={25} gray/>
+													})
+
+												:
+													data.buttons.map( i => {
+														return <Bubble text={i} limit={25} gray/>
+													})
+													
+											}
+										</div>
+
+										{
+											data.buttons.length > 12 &&
+											<p
+												onClick={() => setShowMoreSkills(!showMoreSkills)} 
+												className='text-blue-500 cursor-pointer'
+											>
+												{
+													showMoreSkills ? 'Show less' : 'Show all'
+												}
+											</p>
+										}
+
+									</div>
+
+									{
+										sections.map(i => i)
+									}
+								</div>
+							:
+								<div className=' mx-auto w-full xsm:w-3/4 sm:w-1/2 2xl:w-1/4 flex-1 flex flex-col justify-around '>
+									<h2 className='text-2xl text-center font-bold'>
+										Page not found :/
+									</h2>
+									<img src={notFound} alt="Not found" />
+								</div>
+						}
+					</>
+
 			}
 		</>
 	)
