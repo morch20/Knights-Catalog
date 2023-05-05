@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LoadingCircle} from '../../../components';
+import { LoadingCircle, FindCourseTag } from '../../../components';
 import DividerContent from '../components/DividerContent';
 import Header from '../components/Header';
 import notFound from '../../../assets/search.svg';
@@ -62,7 +62,11 @@ const Course = ({ name }) => {
                                             Object.values(data[0]).map(i => {
                                                 if(i.title !== 'Course Description'){
                                                     return(
-                                                        <DividerContent title={i.title} text={i.text} />
+                                                        <DividerContent title={i.title}>
+                                                            <div className='flex flex-wrap gap-x-1'>
+                                                                <FindCourseTag text={i.text} newTab={false}/>
+                                                            </div>
+                                                        </DividerContent>
                                                     )
                                                 }
                                             })
