@@ -91,40 +91,41 @@ const Program = ({name}) => {
 										img={data.header.pictureLink}
 									/>
 
-									<div className='my-20 p-7 border w-full h-full'>
+									{
+										data?.buttons &&
+										<div className='my-20 p-7 border w-full h-full'>
 
-										<h3 className='text-gray-500 text-base mb-5 font-semibold'>SKILLS YOU WILL LEARN</h3>
+											<h3 className='text-gray-500 text-base mb-5 font-semibold'>SKILLS YOU WILL LEARN</h3>
 
-										<div className='flex w-full h-full flex-wrap gap-5 mb-5'>
-											{
-												data.buttons.length > 12 && !showMoreSkills
-												?
-
-													data.buttons.slice(0, 12).map( i => {
-														return <Bubble text={i} limit={25} gray/>
-													})
-
-												:
-													data.buttons.map( i => {
-														return <Bubble text={i} limit={25} gray/>
-													})
-													
-											}
-										</div>
-
-										{
-											data.buttons.length > 12 &&
-											<p
-												onClick={() => setShowMoreSkills(!showMoreSkills)} 
-												className='text-blue-500 cursor-pointer'
-											>
+											<div className='flex w-full h-full flex-wrap gap-5 mb-5'>
 												{
-													showMoreSkills ? 'Show less' : 'Show all'
-												}
-											</p>
-										}
+													data.buttons?.length > 12 && !showMoreSkills
+													?
 
-									</div>
+														data.buttons.slice(0, 12).map( i => {
+															return <Bubble text={i} limit={25} gray/>
+														})
+
+													:
+														data?.buttons?.map( i => {
+															return <Bubble text={i} limit={25} gray/>
+														})
+														
+													}
+													{
+														data.buttons.length > 12 &&
+														<p
+															onClick={() => setShowMoreSkills(!showMoreSkills)} 
+															className='text-blue-500 cursor-pointer'
+														>
+															{
+																showMoreSkills ? 'Show less' : 'Show all'
+															}
+														</p>
+													}														
+											</div>
+										</div>
+									}
 
 									{
 										sections.map(i => i)
