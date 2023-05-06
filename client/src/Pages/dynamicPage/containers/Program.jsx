@@ -5,6 +5,7 @@ import { LoadingCircle, Bubble } from '../../../components';
 import notFound from '../../../assets/search.svg';
 import DividerContent from '../components/DividerContent';
 import Section from '../components/Section';
+import { regexNotWord } from '../../../utils/constants';
 
 
 const Program = ({name}) => {
@@ -13,6 +14,7 @@ const Program = ({name}) => {
 	const college = searchParams.get('college');
 
 	const [data, setData] = useState(null);
+	const [outlineData, setOutlineData] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const [sections, setSections] = useState([]);
 	const [showMoreSkills, setShowMoreSkills] = useState(false);
@@ -25,6 +27,7 @@ const Program = ({name}) => {
 			console.log(currData);
 
 			let lst = []
+			let outlineLst = [];
 			const object = currData.documents[0].sections;
 			for (const key in object) {
 				if (object.hasOwnProperty(key)) {
@@ -36,6 +39,7 @@ const Program = ({name}) => {
 						lst.push(
 							<DividerContent title={key} text={section.body.text} />
 						);
+						outlineLst.push(key);
 					}
 					
 					else{
@@ -53,11 +57,13 @@ const Program = ({name}) => {
 								grandTotalCredits={section.body.grandTotalCredits}
 							/>
 						);
+						outlineLst.push(section.title);
 					}
 				}
 			}
 			setLoading(false);
 			setData(currData.documents[0]);
+			setOutlineData(outlineLst);
 			setSections(lst);
 		})
 		.catch(e => {
@@ -82,7 +88,7 @@ const Program = ({name}) => {
 						{
 							data
 							?
-								<div>
+								<div className=' scroll-smooth'>
 									<Header
 										title={data.programTitle} 
 										description={data.header.subtitle}
@@ -126,10 +132,37 @@ const Program = ({name}) => {
 											</div>
 										</div>
 									}
+									<div className='flex justify-between relative'>
+										<div className='h-full w-3/4'>
+											{
+												sections.map(i => i)
+											}
+										</div>
 
-									{
-										sections.map(i => i)
-									}
+										<div className=' hidden p-8 border md:block top-24 2xl:top-28 sticky h-full w-1/5'>
+											<h3 className='text-xl font-semibold'>Sections</h3>
+											<ul className='p-4'>
+												{
+													outlineData.map(i => {
+														return(
+															<li className=' list-disc'>
+																<p 
+																	className='text-blue-500 xl:text-lg cursor-pointer '
+																	onClick={() => {
+																		let section = document.querySelector( `#${i.replaceAll(regexNotWord, '')}` );
+																		section.scrollIntoView({behavior: 'smooth', block: "start"})
+																	}}		
+																>
+																	{i}
+																</p>
+															</li>
+														)
+													})
+												}
+											</ul>
+											
+										</div>
+									</div>
 								</div>
 							:
 								<div className=' mx-auto w-full xsm:w-3/4 sm:w-1/2 2xl:w-1/4 flex-1 flex flex-col justify-around '>

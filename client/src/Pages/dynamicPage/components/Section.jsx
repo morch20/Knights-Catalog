@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgramDetails from './ProgramDetails';
+import { regexNotWord } from '../../../utils/constants';
 
 const Section = ({ section, p, li, h3, h2, h4, links, title, grandTotalCredits, headers }) => {
 
@@ -55,7 +56,7 @@ const Section = ({ section, p, li, h3, h2, h4, links, title, grandTotalCredits, 
 	
 
   	return (
-    	<div className='my-8'>
+    	<div className='my-8 scroll-m-28' id={title.replaceAll(regexNotWord, '')}>
 
 			<div className='my-2'>
 				<h3 className='my-1 text-xl md:text-2xl'>

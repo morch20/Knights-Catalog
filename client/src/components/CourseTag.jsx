@@ -101,7 +101,7 @@ const CourseTag = ({ text, newTab = false }) => {
 								</div>
 							</div>
 						:
-							<div className='absolute top-5 border border-gray-300 flex flex-col justify-between bg-stone-200 shadow-md rounded min-h-[10rem] h-fit w-[80vw] xsm:w-[75vw] z-[2] p-5'>
+							<div className='absolute top-5 border border-gray-300 flex flex-col justify-between bg-stone-200 shadow-md rounded min-h-[10rem] h-fit w-[80vw] xsm:w-[65vw] z-[2] p-5'>
 								<div className='flex'>
 
 									<div className='flex flex-col items-center'>
