@@ -1,11 +1,14 @@
 import React from 'react';
 import CourseTag from './CourseTag';
+import { regexCodeWithSpace, regexCode } from '../utils/constants';
 
 const FilterTags = ({element, links, li}) => {
+    //console.log(element)
     let tab = <></>;
-    const regexCodeWithSpace = /[A-Z]{3}\s[0-9]{4}/;
-    const regexCode = /[A-Z]{3}[0-9]{4}/;
     let courseTag = <></>;
+    if(element.substring(0,2) === "• "){
+        element = element.replace("• ", "");
+    }
 
     if(element.search(regexCode) === 0){
         tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
