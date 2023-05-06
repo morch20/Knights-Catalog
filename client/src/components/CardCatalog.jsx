@@ -46,7 +46,7 @@ const CardCatalog = ({ data, course }) => {
 
 	return (
 		<Link 
-			to={'/' + data.name + '?type=' + data.type + '&college=' + data.college}
+			to={'/' + data.name.replaceAll('/', 'slash') + '?type=' + data.type + '&college=' + data.college}
 			data-aos="zoom-in-up" 
 			className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer'
 		>

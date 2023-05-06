@@ -4,7 +4,6 @@ import { useOutsideClick } from '../hooks';
 import { AiFillStar } from 'react-icons/ai';
 import { FindCourseTag, LoadingCircle } from './';
 import face5 from '../assets/face-smile-big-svgrepo-com.svg';
-import replaceSymbol from '../utils/functions';
 
 const CourseTag = ({ text, newTab = false }) => {
 	
@@ -34,7 +33,7 @@ const CourseTag = ({ text, newTab = false }) => {
 		if(data === null){
 
 			setLoading(true);
-			const fetchCode = replaceSymbol( code[text.substring(0,3)], '&', 'ampersand');
+			const fetchCode = code[text.substring(0,3)].replace('&', 'ampersand');
 
 			fetch('http://localhost:5000/undergraduate/courses/' + text + '?code=' + fetchCode)
 				.then(response => response.json())
