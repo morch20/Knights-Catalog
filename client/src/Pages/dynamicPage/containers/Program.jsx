@@ -146,7 +146,7 @@ const Program = ({name}) => {
 											}
 										</div>
 
-										<div className=' hidden p-8 border md:block top-24 2xl:top-28 sticky h-full w-1/5'>
+										<div className=' hidden p-8 border md:block top-24 2xl:top-28 sticky max-h-[75vh] h-full w-1/5 hide-scrollbar overflow-y-scroll'>
 												<h3 className='text-xl font-semibold'>Sections</h3>
 												<ul className='p-4'>
 													{
