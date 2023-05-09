@@ -13,85 +13,6 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         setOpen(false);
     }, [buttonRef]);
 
-    filtersP = [
-        {
-            title: 'Type',
-            options: ['Program', 'Course', 'Rating']
-        },
-        {
-            title: 'College',
-            options: [
-                "College of Arts and Humanities",
-                "College of Business Administration",
-                "College of Community Innovation and Education",
-                "College of Engineering and Computer Science",
-                "College of Sciences",
-                "College of Health Professions and Sciences",
-                "College of Nursing",
-                "College of Medicine",
-                "College of Optics and Photonics",
-                "College of Undergraduate Studies",
-                "Rosen College of Hospitality Management",
-                "Burnett Honors College"
-            ]
-        },
-        {
-            title: 'Department',
-            options: [
-                'Department of English',
-                'Department of History',
-                'Department of Modern Languages and Literatures',
-                "Department of Philosophy",
-                'Department of Writing and Rhetoric',
-                "Program in Women’s and Gender Studies",
-                'School of Performing Arts',
-                'School of Visual Arts and Design',
-                'Department of Economics',
-                'Department of Finance',
-                'Department of Integrated Business',
-                'Department of Management',
-                'Department of Marketing',
-                'Dr. P. Phillips School of Real Estate',
-                'Kenneth G. Dixon School of Accounting',
-                'Department of Counselor Education and School Psychology',
-                'Department of Criminal Justice',
-                'Department of Educational Leadership and Higher Education',
-                'Department of Learning Sciences and Educational Research',
-                'Department of Legal Studies',
-                'School of Global Health Management and Informatics',
-                'School of Public Administration',
-                'School of Teacher Education',
-                'Department of Civil, Environmental, and Construction Engineering',
-                'Department of Computer Science',
-                'Department of Electrical and Computer Engineering',
-                'Department of Industrial Engineering and Management Systems',
-                'Department of Materials Science and Engineering',
-                'Department of Mechanical and Aerospace Engineering',
-                'Reserve Officer Training Corp: Air Force ROTC',
-                'Reserve Officer Training Corp: Army ROTC',
-                'Department of Health Sciences',
-                'School of Communication Sciences and Disorders',
-                'School of Kinesiology and Physical Therapy',
-                'School of Social Work',
-                'Burnett School of Biomedical Sciences',
-                'Department of Anthropology',
-                'Department of Biology',
-                'Department of Chemistry',
-                'Department of Mathematics',
-                'Department of Physics',
-                'Department of Psychology',
-                'Department of Sociology',
-                'Department of Statistics and Data Science',
-                'Nicholson School of Communication and Media',
-                'School of Politics, Security, and International Affairs',
-                'Department of Interdisciplinary Studies',
-                'Department of Foodservices and Lodging Management',
-                'Department of Hospitality Services',
-                'Department of Tourism, Events and Attractions'
-            ]
-        }
-    ];
-
     const [filters, setFilters] = useState(filtersP);
 
     const update = async (option, title) => {
@@ -100,6 +21,14 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         if(option === 'Course'){
             const codes = localStorage.getItem('codes');
             setFilters([...filters, {title: 'Code', options: Object.values(JSON.parse(codes)).sort()}]);
+        }
+
+        else if(option === 'Program'){
+            const programTypes = {
+                title: 'Program',
+                options: ['Major', 'Minor', 'Certificate', 'Accelerated UndergraduateGraduate Program']
+            };
+            setFilters([...filters, programTypes]);
         }
         
         setPage(0);
@@ -130,6 +59,11 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
             setFilters(filters.filter( i => i.title !== 'Code'));
             setSelectedFilters(selectedFilters.filter(i => i.option !== option && i.option.length > 3));
         }
+        else if(option === 'Program'){
+            delete value.current['Program'];
+            setFilters(filters.filter( i => i.title !== 'Program'));
+            setSelectedFilters(selectedFilters.filter(i => i.title !== 'Program' && i.option !== option));
+        }
         else setSelectedFilters(selectedFilters.filter(i => i.option !== option));
     }
 
@@ -138,7 +72,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         value.current = {};
         setSelectedFilters([]);
         setOpen(false);
-        setFilters(filters.filter( i => i.title !== 'Code'));
+        setFilters(filters.filter( i => (i.title !== 'Code' && i.title !== 'Program')));
     }
     
     useEffect(() => {
@@ -152,7 +86,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
             ref={buttonRef}
             onClick={() => setOpen(!open)} 
             className={'md:hidden my-5 transition duration-500 ease-out bg-white p-3 w-32 rounded-md border md:border-2 flex justify-between items-center ' + (open ? 'border-[color:var(--purple)] text-[color:var(--purple)]' : '')}
-            >
+        >
             Filters
             <VscSettings size={20} />
         </button>

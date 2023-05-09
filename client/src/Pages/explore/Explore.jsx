@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { SearchBar, CardCatalog, LoadingCircle, Paginate, Filters } from '../../components';
-import { regexCode } from '../../utils/constants';
+import { regexCode, filtersPExplorePage } from '../../utils/constants';
 import notFound from '../../assets/search.svg';
 
 
@@ -77,7 +77,7 @@ const Explore = () => {
                     className='w-full h-10 my-10 2xl:h-12 ' 
                 />
 
-                <Filters value={filtersRef} callback={loadData} setPage={setPage} />
+                <Filters filtersP={filtersPExplorePage} value={filtersRef} callback={loadData} setPage={setPage} />
             </div>
 
             {
