@@ -107,7 +107,7 @@ const Explore = () => {
                                         {
                                             searchData.map(data => {
                                                 //console.log(data)
-                                                if(data.name.search(regexCode) >= 0){
+                                                if(data.type === 'course'){
                                                     return <CardCatalog data={data} key={data._id} course />
                                                 }
                                                 return <CardCatalog data={data} key={data._id} />

@@ -26,7 +26,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         else if(option === 'Program'){
             const programTypes = {
                 title: 'Program',
-                options: ['Major', 'Minor', 'Certificate', 'Accelerated UndergraduateGraduate Program']
+                options: ['Accelerated UndergraduateGraduate Program', 'Articulated A.S. Programs', 'Certificate', 'Major', 'Minor',]
             };
             setFilters([...filters, programTypes]);
         }
@@ -72,7 +72,12 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
         value.current = {};
         setSelectedFilters([]);
         setOpen(false);
-        setFilters(filters.filter( i => (i.title !== 'Code' && i.title !== 'Program')));
+        if(filtersP[0].title === 'Program'){
+            setFilters(filters.filter( i => (i.title !== 'Code')));
+        }
+        else{
+            setFilters(filters.filter( i => (i.title !== 'Code' && i.title !== 'Program')));
+        }
     }
     
     useEffect(() => {
