@@ -46,21 +46,21 @@ router.get('/program/:id', (req, res) =>{
 })
 
 //programs
-router.get('/programs', (req, res) => {
+router.post('/programs', (req, res) => {
     const p = req.query.p;
+    const filters = req.body || {};
 
-    getAll(client.db('undergraduateSearch'), 'programs',
-         getFilters(['type', 'college'], [req.get('types'), req.get('colleges')], false), p, res);
+    getAll(client.db('undergraduateSearch'), 'programs', getFilters(filters, true), p, res);
     
 });
 
-router.get('/programs/:id', (req, res) => {
+router.post('/programs/:id', (req, res) => {
     const p = req.query.p;
     const id = req.params.id;
-    const college = (req.headers.college === undefined || req.headers.college === '') ? new RegExp() : req.headers.college;
-    console.log(college)
+    const filters = req.body || {};
+    filters['name'] = [id.replace('(', String.raw`\(`).replace(')', String.raw`\)`)];
 
-    getMany(client.db('undergraduateSearch'), 'programs', {'name': new RegExp(id,"i"), 'college': college}, p, res);
+    getMany(client.db('undergraduateSearch'), 'programs', getFilters(filters, true), p, res);
 });
 
 //courses
