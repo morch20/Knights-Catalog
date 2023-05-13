@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { SearchBar, CardCatalog, LoadingCircle, Paginate, Filters } from '../../components';
-import { regexCode, filtersPExplorePage } from '../../utils/constants';
+import { filtersPExplorePage } from '../../utils/constants';
 import notFound from '../../assets/search.svg';
 
 
