@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { SearchBar, Paginate, Filters, LoadingCircle, CardCatalog } from '../../components';
 import { filtersPCompareProgramsPage, regexCode } from '../../utils/constants';
 import notFound from '../../assets/search.svg';
-import { AiOutlineDelete } from 'react-icons/ai';
+import SelectedPrograms from './components/SelectedPrograms';
 
 const ComparePrograms = () => {
 
@@ -149,44 +149,7 @@ const ComparePrograms = () => {
                 <Paginate setPage={setPage} />
             </div>
 
-            <div className='flex flex-col items-center border p-4 top-24 2xl:top-28 sticky h-[75vh] w-1/5 hide-scrollbar overflow-y-scroll'>
-                
-                <h3 className='text-center text-lg font-semibold'>Selected Programs</h3>
-
-                {
-                    (Object.values(selectedPrograms)).map(i => {
-                        return(
-                            <div 
-                                className='flex my-5 flex-col cursor-pointer items-center justify-between w-full h-28 rounded shadow relative shake'
-                                onClick={() => {
-                                    let tmp = JSON.parse(JSON.stringify(selectedPrograms));
-                                    delete tmp[i.name];
-                                    setSelectedPrograms(tmp);
-                                }}
-                            >
-                                <img 
-                                    src={i.header.pictureLink || 'https://images.pexels.com/photos/13814635/pexels-photo-13814635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} 
-                                    alt="picture" 
-                                    className='rounded-t-md w-full h-3/4 object-cover' 
-                                />
-                                <p title={i.name} className=' w-4/5 font-medium overflow-hidden whitespace-nowrap text-ellipsis'>{i.name}</p>
-
-                                <span className='h-fit w-fit p-1 absolute -top-2 -right-2 bg-red-300 rounded-full '>
-                                    <AiOutlineDelete size={20}/>    
-                                </span>
-                            </div>
-                        )
-                    })
-                }
-
-                {
-                    ((Object.values(selectedPrograms)).length === 2) &&
-                    <button className=' bg-[color:var(--yellow)] hover:text-white active:bg-yellow-300 w-4/5 h-12 rounded'>
-                        Compare them!
-                    </button>
-                }
-
-            </div>  
+            <SelectedPrograms selectedPrograms={selectedPrograms} setSelectedPrograms={setSelectedPrograms} />
         </div>
      );
 }
