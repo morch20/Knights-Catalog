@@ -168,7 +168,7 @@ const Filters = ({ filtersP, value, callback, setPage }) => {
                     selectedFilters?.map(i => {
                         return(
                         <div 
-                            className=' cursor-pointer h-8 flex items-center px-2 bg-gray-200 rounded-xl transition-all hover:shadow-md hover:h-9'
+                            className=' cursor-pointer min-h-8 flex items-center px-2 bg-gray-200 rounded-xl transition-all hover:shadow-md hover:h-9'
                             onClick={() => remove(i.option, i.title)}
                         >
                             <p className='text-gray-500 text-justify'>{i.option}</p>
