@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgramDetails from './ProgramDetails';
+import { ProgramDetails } from '../../../components';
 import { regexNotWord } from '../../../utils/constants';
 
 const Section = ({ section, p, li, h3, h2, h4, links, title, grandTotalCredits, headers }) => {

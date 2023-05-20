@@ -12,3 +12,4 @@ export {default as DropDown} from "./DropDown.jsx";
 export {default as FilterTags} from "./FilterTags.jsx";
 export {default as FindCourseTag} from "./FindCourseTag.jsx";
 export {default as CourseTag} from "./CourseTag.jsx";
+export {default as ProgramDetails} from "./ProgramDetails.jsx";
