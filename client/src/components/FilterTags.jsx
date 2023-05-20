@@ -2,8 +2,8 @@ import React from 'react';
 import CourseTag from './CourseTag';
 import { regexCodeWithSpace, regexCode } from '../utils/constants';
 
-const FilterTags = ({element, links, li}) => {
-    //console.log(element)
+const FilterTags = ({element, links, li, highlights}) => {
+    let highlightColor = "";
     let tab = <></>;
     let courseTag = <></>;
     if(element.substring(0,2) === "• "){
@@ -12,11 +12,13 @@ const FilterTags = ({element, links, li}) => {
 
     if(element.search(regexCode) === 0){
         tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
+        highlightColor = (highlights && highlights.current[element.substring(0,8)]) ? "bg-green-200" : "";
         courseTag = <CourseTag text={element.substring(0,8)} />
         element = (element[7] === "C" || element[7] === "L" || element[7] === "H" || element[7] === "K") ? element.substring(8, element.length): element.substring(7, element.length);
     }
     else if(element.search(regexCodeWithSpace) === 0){
         tab = <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
+        highlightColor = (highlights && highlights.current[element.substring(0,9)]) ? "bg-green-200" : "";
         courseTag = <CourseTag text={element.substring(0,9)} />
         element = (element[8] === "C" || element[8] === "L" || element[8] === "H" || element[8] === "K") ? element.substring(9, element.length): element.substring(8, element.length);
     }
@@ -60,8 +62,19 @@ const FilterTags = ({element, links, li}) => {
     return (
         <>
             {(li) ? "": tab}
-            {courseTag}
-            {element}
+            {
+                highlightColor
+                ?
+                    <span className={highlightColor}>
+                        {courseTag}
+                        {element}
+                    </span>
+                :
+                    <>
+                        {courseTag}
+                        {element}
+                    </>
+            }
         </>
     );
 }
