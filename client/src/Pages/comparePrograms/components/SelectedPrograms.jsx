@@ -42,7 +42,7 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
         return tmpData;
     }
 
-    const constructHighlights = (courseSections) => {
+    const constructHighlights = (courseSections, last) => {
         for (const key in courseSections) {
 				
             if (courseSections.hasOwnProperty(key)) {
@@ -52,7 +52,7 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
                     if (currentCourseSection.hasOwnProperty(key)) {
                         if(key === "header") continue;
                         const text = currentCourseSection[key];
-                        getTagsHighlights(text, highlights);
+                        getTagsHighlights(text, highlights, last);
                     }
                 }
             }
@@ -69,8 +69,8 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
         const section1 = await fetchData((Object.values(selectedPrograms))[1]);
         
         if(section0 !== undefined && section1 !== undefined){
-            constructHighlights(section0.courseSections);
-            constructHighlights(section1.courseSections);
+            constructHighlights(section0.courseSections, false);
+            constructHighlights(section1.courseSections, true);
         }
         setComparisonSection0(section0);
         setComparisonSection1(section1);

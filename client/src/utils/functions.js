@@ -1,6 +1,6 @@
 import { regexCodeWithSpace, regexCode } from './constants';
 
-export function getTagsHighlights(text, highlight){
+export function getTagsHighlights(text, highlight, last){
 
     const arr = text?.split("\n");
 
@@ -13,16 +13,20 @@ export function getTagsHighlights(text, highlight){
             }
 
             if(element.search(regexCode) === 0){
-                if(highlight.current.hasOwnProperty(element.substring(0,8)) ){
-                    highlight.current[element.substring(0,8)] = true;
+                if(last){
+                    if(highlight.current.hasOwnProperty(element.substring(0,8)) ){
+                        highlight.current[element.substring(0,8)] = true;
+                    }
                 }
                 else{
                     highlight.current[element.substring(0,8)] = false;
                 }
             }
             else if(element.search(regexCodeWithSpace) === 0){
-                if(highlight.current.hasOwnProperty(element.substring(0,9)) ){
-                    highlight.current[element.substring(0,9)] = true;
+                if(last){
+                    if(highlight.current.hasOwnProperty(element.substring(0,9)) ){
+                        highlight.current[element.substring(0,9)] = true;
+                    }
                 }
                 else{
                     highlight.current[element.substring(0,9)] = false;
