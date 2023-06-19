@@ -107,19 +107,6 @@ const ComparePrograms = () => {
 
                                             {
                                                 searchData.map(data => {
-                                                    //console.log(data)
-                                                    if(data.type === 'course'){
-                                                        return(
-                                                            <CardCatalog 
-                                                                data={data} 
-                                                                key={data._id} 
-                                                                course 
-                                                                compareProgram 
-                                                                selectedPrograms={selectedPrograms} 
-                                                                setPrograms={setSelectedPrograms} 
-                                                            />
-                                                        );
-                                                    }
                                                     return(
                                                         <CardCatalog 
                                                             data={data} 

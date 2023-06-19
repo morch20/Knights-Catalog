@@ -47,7 +47,7 @@ const CardCatalog = ({ data, course, setPrograms, selectedPrograms, compareProgr
 			<Link
 				to={'/' + data.name + '?type=' + data.type}
 				data-aos="zoom-in-up" 
-				className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer '
+				className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-md hover:shadow-xl cursor-pointer '
 			>
 
 				<div className={'rounded-t-md w-full h-[30%] object-cove ' + collegesColors[(data.college === 'The Burnett Honors College') ? 'Burnett Honors College' : data.college]}/>
@@ -83,7 +83,7 @@ const CardCatalog = ({ data, course, setPrograms, selectedPrograms, compareProgr
 					<div 
 						onClick={handleClick}
 						className={
-							'w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer ' +
+							'w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-md hover:shadow-xl cursor-pointer ' +
 							(selected ? ' border-4 border-yellow-300 '  : '')
 						}
 					>
@@ -93,7 +93,7 @@ const CardCatalog = ({ data, course, setPrograms, selectedPrograms, compareProgr
 					<Link 
 						to={'/' + data.name.replaceAll('/', 'slash') + '?type=' + data.type + '&college=' + data.college}
 						data-aos="zoom-in-up" 
-						className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-lg cursor-pointer'
+						className='w-full max-w-[18rem] h-[20rem] bg-white rounded-md shadow-md hover:shadow-xl cursor-pointer'
 					>
 						<ProgramCardCatalog data={data} />
 					</Link>

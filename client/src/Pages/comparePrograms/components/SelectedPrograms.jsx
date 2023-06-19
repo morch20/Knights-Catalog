@@ -91,7 +91,7 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
                     </div>
                 </div>
 
-                <div className={'md:hidden bg-[#f5f6f7] flex flex-col items-center border-gray-400 border-t-2 p-1 left-0 fixed h-32 w-full transition-all duration-500 '+ (hide ? '-bottom-[7.5rem]' : 'bottom-0') } >
+                <div className={'md:hidden bg-[#e9ebf0] flex flex-col items-center border-gray-400 border-t-2 p-1 left-0 fixed h-32 w-full transition-all duration-500 '+ (hide ? '-bottom-[7.5rem]' : 'bottom-0') } >
                         
                     <h3 className=' text-center font-semibold'>Selected Programs</h3>
 
@@ -100,7 +100,7 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
                             (Object.values(selectedPrograms)).map(i => {
                                 return(
                                     <div
-                                        className='flex flex-col cursor-pointer items-center justify-between w-1/5 h-20 md:h-28 rounded shadow-md relative shake'
+                                        className='flex flex-col bg-white cursor-pointer items-center justify-between w-1/5 h-20 md:h-28 rounded shadow-md relative shake'
                                         onClick={() => {
                                             let tmp = JSON.parse(JSON.stringify(selectedPrograms));
                                             delete tmp[i.name];
@@ -133,7 +133,7 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
                 </div>  
             </>
 
-            <div className=' hidden md:flex flex-col items-center shadow-sm border p-4 top-24 2xl:top-28 sticky h-[75vh] w-1/5 hide-scrollbar overflow-y-scroll'>
+            <div className=' hidden md:flex bg-[#e9ebf0] flex-col items-center shadow-sm border p-4 top-24 2xl:top-28 sticky h-[75vh] w-1/5 hide-scrollbar overflow-y-scroll'>
                 
                 <h3 className=' text-center text-lg font-semibold'>Selected Programs</h3>
     
@@ -142,7 +142,7 @@ const SelectedPrograms = ({ selectedPrograms, setSelectedPrograms }) => {
                         (Object.values(selectedPrograms)).map(i => {
                             return(
                                 <div
-                                    className='flex my-5 flex-col cursor-pointer items-center justify-between w-full h-28 rounded shadow relative shake'
+                                    className='flex my-5 flex-col bg-white cursor-pointer items-center justify-between w-full h-28 rounded shadow relative shake'
                                     onClick={() => {
                                         let tmp = JSON.parse(JSON.stringify(selectedPrograms));
                                         delete tmp[i.name];
