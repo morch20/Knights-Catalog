@@ -16,7 +16,7 @@ const DropDown = ({ title, options, update, remove, values }) => {
             <button
                 ref={buttonRef}
                 onClick={() => setOpen(!open)}
-                className='border border-gray-300 focus:border-[color:var(--yellow)] my-4 rounded p-4 w-full text-sm flex justify-between items-center'
+                className='border border-gray-300 focus:border-[color:var(--purple)] my-4 rounded p-4 w-full text-sm flex justify-between items-center'
             >
                 {title}
                 <IoMdArrowDropdown size={20} color='050040'/>
