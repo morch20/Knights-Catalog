@@ -29,11 +29,13 @@ const Comparison = ({ data, highlights, name }) => {
                         />
                     </div>
                 :
-                    <div className='w-[45%] h-full overflow-y-scroll'>
+                    <div className='w-[45%] h-full '>
                         <h2 className='text-xl'>
                             {name}
                         </h2>
-                        <CompareSection section={data} highlights={highlights} />
+                        <div className='h-3/4 my-4 overflow-y-scroll'>
+                            <CompareSection section={data} highlights={highlights} />   
+                        </div>
                         <h2 className='text-xl'>
                             {data?.grandTotalCredits}
                         </h2>
