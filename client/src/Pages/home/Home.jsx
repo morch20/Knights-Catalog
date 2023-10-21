@@ -34,8 +34,7 @@ const Home = () => {
           </h1>
 
           <p className=' max-w-[25rem] 2xl:max-w-[40rem] lg:text-lg xl:text-xl 2xl:text-2xl font-normal text-base text-[color:var(--text-secondary-light)] mt-10 lg:mt-14 2xl:mt-28 xsm:mt-14 md:mt-8'>
-            Build your brand's recognition and get detailed insights on how your
-            links are performing .
+            Explore, compare, and rate UCF's catalog website all in one place!
           </p>
 
           <div className='flex slide-up relative'>
@@ -72,19 +71,19 @@ const Home = () => {
           <div className=' w-full flex flex-col md:flex-row items-center justify-center mt-10 sm:mt-20 md:mt-28 2xl:mt-36'>
             <Card
               title='Compare Programs'
-              text='Drive performance and your cress-functional collaborating with easy-to boards'
+              text='Select two programs to compare their degree requirements without having to do any fancy work.'
               iconURL={compareIcon}
               iconAlt='compare icon'
             />
             <Card
               title='Check Courses'
-              text='Drive performance and your cress-functional collaborating with easy-to boards'
+              text='Check courses on your preferred program to see the prerequisite requirements to plan for your next semester.'
               iconURL={checkIcon}
               iconAlt='check icon'
             />            
             <Card
               title='Rate Courses'
-              text='Drive performance and your cress-functional collaborating with easy-to boards'
+              text='Find courses to rate, give comments, and help other students to know what to expect from their curriculum.'
               iconURL={ratingIcon}
               iconAlt='rating icon'
               last
