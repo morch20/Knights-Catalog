@@ -276,6 +276,66 @@ input[type="checkbox"]:checked::before {
   }
 }
 
+.right-to-middle {
+  animation: 0.8s ease-out 0s 1 right-to-middle;
+}
+
+.middle-to-left {
+  animation: 0.8s ease-out 0s 1 middle-to-left;
+}
+
+.left-to-middle {
+  animation: 0.8s ease-out 0s 1 left-to-middle;
+}
+
+.middle-to-right {
+  animation: 0.8s ease-out 0s 1 middle-to-right;
+}
+
+@keyframes right-to-middle {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes middle-to-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes left-to-middle {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes middle-to-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+
 @keyframes slideInRight {
   0% {
     transform: translateX(-100%);
