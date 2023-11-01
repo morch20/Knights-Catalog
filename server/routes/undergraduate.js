@@ -66,11 +66,16 @@ router.post('/programs/:id', (req, res) => {
 //courses
 router.get('/courses', (req, res) => {
     const p = req.query.p;
-    const codes = req.get('codes').substring(0,3);
-    console.log(codes);
+    let code = req.query.code;
+    if(code){
+        code = code.replace("ampersand", "&");
+    
+        getAll(client.db('undergraduateCourses'), code, {}, p, res);
+    }
+    else{
+        res.status(400).send('Please enter the code');
+    }
 
-    getAll(client.db('undergraduateSearch'), 'courses',
-         getFilters(['name'], [codes], true), p, res);
     
 });
 
